@@ -1,0 +1,52 @@
+---
+title: Design System Mercado Público
+publishDate: 2023-06-01 00:00:00
+img: /assets/design-system-mercadopublico.png
+img_alt: Design System de Mercado Público — Lineamientos de Contenido y UX Writing
+description: |
+  Lideré los lineamientos de contenido y UX Writing del Design System de Mercado Público, definiendo cómo le habla la plataforma a las personas que la usan.
+tags:
+  - Design System
+  - UX Writing
+  - Contenido
+---
+
+**Rol:** Design System Lead · **Cliente:** ChileCompra / Mercado Público
+
+## El punto de partida
+
+Mercado Público mueve miles de millones de pesos en compras públicas cada año. Es la plataforma donde el Estado de Chile compra y donde los proveedores venden. Una herramienta crítica, compleja, y que llevaba años creciendo sin que nadie se preguntara con seriedad: ¿cómo le estamos hablando a las personas que la usan?
+
+Cuando empecé a liderar el Design System, una de las cosas que más me llamó la atención fue la desconexión entre la plataforma y su lenguaje. Cada equipo escribía a su manera. Algunos flujos sonaban a formulario tributario. Otros, a manual técnico. Muy pocos sonaban a una conversación real entre personas.
+
+## La pregunta que lo cambió todo
+
+Hay una pregunta simple que se volvió el norte de este proyecto: *¿existen personas que hablen así?*
+
+Si la respuesta era no, había que reescribir. Esa pregunta, tan directa, se convirtió en el filtro con el que empezamos a evaluar todo el contenido existente en la plataforma.
+
+El diagnóstico fue revelador. Encontramos abreviaturas que nadie fuera del equipo interno entendía —CM, RFI, OOPP— mezcladas con anglicismos como *backoffice* que aparecían sin contexto. Encontramos botones que decían "cancelar" cuando en realidad significaban "pagar", generando una confusión que tenía consecuencias reales. Encontramos mensajes de error que señalaban el problema pero no ofrecían ninguna salida. El sistema le hablaba a los usuarios desde arriba, no a su lado.
+
+## Construir desde los principios
+
+Trabajé junto al Departamento de Comunicaciones de ChileCompra para definir tres principios que debía cumplir todo contenido dentro del sistema. No como una lista de reglas, sino como una forma de pensar antes de escribir: el contenido tiene que ser **claro, conciso y útil**. Tres palabras simples que, bien internalizadas, cambian completamente cómo se diseña una interfaz.
+
+Desde ahí, desarrollé un conjunto de lineamientos concretos que cualquier persona del equipo pudiera aplicar sin necesidad de ser escritora profesional. Cosas como preferir "fue" sobre "ha sido", porque el pasado simple es más directo y más humano. O entender que un CTA no es solo un botón, es una promesa: le estás diciendo al usuario exactamente qué va a pasar cuando haga clic, y esa promesa tiene que cumplirse.
+
+Uno de los lineamientos que más me gustó desarrollar fue el de **ofrecer salidas**. La idea detrás es profundamente respetuosa con el usuario: no todas las personas quieren seguir el camino que nosotros diseñamos. Algunas necesitan desviarse, volver atrás, tomar una ruta alternativa. El contenido tiene que anticipar eso y acompañarlos igual.
+
+## El desafío de lo técnico
+
+Mercado Público tiene una particularidad que complicó algunas decisiones: sus usuarios compradores son expertos en compras públicas. Eso significa que hay términos técnicos y legales que no se pueden eliminar porque son parte de su vocabulario profesional. Ahí el reto no era simplificar a cualquier costo, sino encontrar el punto de equilibrio donde el lenguaje técnico necesario coexiste con la mayor amabilidad posible. Ese matiz se documentó explícitamente en el sistema.
+
+## Lo que quedó
+
+Al final, los lineamientos de contenido se integraron al Design System con el mismo peso que la tipografía, los colores o los componentes. No como un anexo, no como un documento aparte en una carpeta de Drive que nadie abre: como parte viva del sistema, consultable en la misma herramienta donde los equipos diseñan.
+
+Eso cambió algo importante. Los equipos dejaron de tomar decisiones de contenido de manera intuitiva y empezaron a tener criterios compartidos. Las revisiones llegaron antes en el proceso. La plataforma empezó a sonar más pareja, más coherente, más humana.
+
+## Lo que me llevé
+
+Este proyecto me confirmó algo que creo profundamente sobre el diseño de sistemas: **las decisiones de contenido son decisiones de arquitectura**. Definir cómo habla un producto no es un detalle de último minuto, es una elección que atraviesa cada pantalla, cada flujo, cada momento en que un usuario necesita entender qué está pasando y qué puede hacer.
+
+Cuando esa decisión se toma con cuidado y se documenta bien, el resultado no es solo una plataforma más consistente. Es una plataforma que se siente más confiable.

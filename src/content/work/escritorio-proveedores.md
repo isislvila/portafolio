@@ -1,0 +1,41 @@
+---
+title: Escritorio para Proveedores en Mercado Público
+publishDate: 2024-01-01 00:00:00
+img: /assets/Escritorio-Proveedor.png
+img_alt: Dashboard de escritorio para proveedores de Mercado Público
+description: |
+  Rediseño del escritorio para proveedores de Mercado Público, centrado en priorizar la información crítica para sus negocios a través de un proceso completo de investigación, diseño y validación con usuarios reales.
+tags:
+  - UX Research
+  - Prototipado
+  - Testing
+---
+
+## El desafío
+
+El escritorio anterior de Mercado Público no priorizaba la información según las necesidades reales de los proveedores. Los usuarios debían buscar manualmente datos críticos para sus negocios, generando fricción y pérdida de tiempo en su operación diaria.
+
+## Proceso de diseño
+
+### Investigación
+Se realizaron entrevistas en profundidad con proveedores para entender sus flujos de trabajo, necesidades y puntos de dolor con el escritorio existente. Esta etapa permitió identificar qué información era realmente crítica para sus negocios.
+
+### Diseño y prototipado
+Con los hallazgos de la investigación se diseñó un nuevo escritorio organizado por criticidad: de lo más urgente e importante para el negocio del proveedor, a lo menos crítico. El prototipo fue iterado en base a feedback continuo del equipo y usuarios clave.
+
+### Testing
+Se realizaron sesiones de testeo con usuarios reales para validar la nueva propuesta, comparando el escritorio viejo versus el nuevo en términos de eficiencia y satisfacción.
+
+## Resultado
+
+### Escritorio viejo vs. nuevo
+El rediseño introdujo una organización visual clara que permite al proveedor identificar de inmediato sus acciones pendientes y oportunidades de negocio, sin necesidad de navegar entre secciones.
+
+### 5 secciones principales
+El nuevo escritorio se estructura en 5 secciones ordenadas por criticidad para el negocio del proveedor, asegurando que la información más relevante esté siempre visible al inicio.
+
+## Piloto y validación en producción
+
+Una vez lanzado el piloto, se monitoreó el uso real de la plataforma mediante **Hotjar**, analizando mapas de calor y grabaciones de sesión para entender cómo los proveedores interactuaban con el nuevo diseño.
+
+Complementariamente, se implementó una **encuesta de salida** para recoger la percepción directa de los usuarios sobre su experiencia con el nuevo escritorio, permitiendo identificar áreas de mejora continua.

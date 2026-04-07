@@ -1,0 +1,75 @@
+CONVERSACIÓN DE INICIO - PORTAFOLIO WEB UX
+Fecha: 2026-03-26 — Actualizado: 2026-03-31
+=========================================
+
+CONTEXTO
+--------
+- Usuario: Diseñadora UX, Design System Lead en ChileCompra / Mercado Público
+- Objetivo: Crear portafolio web desde cero
+- Stack elegido: Astro con template "Portfolio"
+- Carpeta del proyecto: /Users/isis/Documents/Portafolio
+
+DECISIONES TOMADAS
+------------------
+- Framework: Astro (ideal para portafolios, genera sitios estáticos rápidos)
+- Template: Portfolio (tiene estructura de portafolio preconstruida)
+- Node.js instalado: v24.14.1
+- npm: 11.11.0
+
+PROYECTO CREADO
+---------------
+Comando usado:
+  npm create astro@latest . -- --template portfolio --install --git
+
+El proyecto se inicializó con:
+  ✔ Template copiado
+  ✔ Dependencias instaladas
+  ✔ Git inicializado
+
+CÓMO CORRER EL PROYECTO
+------------------------
+1. Abre la terminal
+2. Ve a la carpeta del proyecto:
+   cd /Users/isis/Documents/Portafolio
+3. Inicia el servidor de desarrollo:
+   npm run dev
+4. Abre en el navegador: http://localhost:4321
+
+DISEÑO APLICADO
+---------------
+- Tipografía: Inter (Google Fonts) — reemplazó Public Sans y Rubik
+- Fondo general: color --gray-900 (#f3f4f7), fondo púrpura del template suavizado con overlay blanco al 75%
+- Referencias de diseño: pratibhajoshi.com y thatedchao.com
+- Sección de proyectos:
+  · Layout: lista vertical, una fila por proyecto
+  · Cada fila: texto izquierda (título + línea + tag + año) / imagen derecha
+  · Imagen: 360px alto, zoom interno en hover (scale 1.06)
+  · Hover: textos cambian a púrpura #7611a6
+- Archivos clave modificados:
+  · src/components/PortfolioPreview.astro — cards de proyectos
+  · src/layouts/BaseLayout.astro — fondo general
+  · src/styles/global.css — tipografía y colores
+  · src/components/MainHead.astro — carga de fuente Inter
+
+PROYECTOS CREADOS
+-----------------
+1. Escritorio para Proveedores en Mercado Público
+   - Archivo: src/content/work/escritorio-proveedores.md
+   - Imagen: /assets/Escritorio-Proveedor.png
+   - Tags: UX Research, Prototipado, Testing
+   - Contenido: entrevistas, diseño, testing, piloto con Hotjar y encuesta de salida
+
+2. Design System Mercado Público — Lineamientos de Contenido / UX Writing
+   - Archivo: src/content/work/design-system-mercadopublico.md
+   - Imagen: PENDIENTE → guardar en /assets/ y actualizar el archivo .md
+   - Tags: Design System, UX Writing, Contenido
+   - Contenido: texto completo redactado, listo
+
+PRÓXIMOS PASOS PENDIENTES
+--------------------------
+- [ ] Agregar imagen al proyecto Design System
+- [ ] Personalizar sección Hero (nombre, bio, foto)
+- [ ] Eliminar proyectos demo del template (bloom-box, h20, markdown-mystery-tour, duvet-genius)
+- [ ] Configurar sección About
+- [ ] Revisar sección Contact
+- [ ] Deploy en Vercel o GitHub Pages
