@@ -1,0 +1,63 @@
+---
+interface Props {
+	before: { src: string; alt: string };
+	after: { src: string; alt: string };
+}
+const { before, after } = Astro.props;
+---
+
+<div class="comparativa">
+	<div class="comparativa-item">
+		<span class="comparativa-label">Antes</span>
+		<img src={before.src} alt={before.alt} loading="lazy" />
+	</div>
+	<div class="comparativa-item">
+		<span class="comparativa-label">Después</span>
+		<img src={after.src} alt={after.alt} loading="lazy" />
+	</div>
+</div>
+
+<style>
+	.comparativa {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+		width: 100vw;
+		margin-left: calc(50% - 50vw);
+		margin-block: 2rem;
+		padding-inline: 2rem;
+		box-sizing: border-box;
+		align-items: start;
+	}
+
+	.comparativa-item {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.comparativa-label {
+		font-size: 0.75rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: #888;
+	}
+
+	.comparativa-item img {
+		width: 100%;
+		height: auto;
+		display: block;
+		border-radius: 0.75rem;
+		box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+	}
+
+	@media (max-width: 50em) {
+		.comparativa {
+			grid-template-columns: 1fr;
+			width: 100%;
+			margin-left: 0;
+			padding-inline: 1rem;
+		}
+	}
+</style>

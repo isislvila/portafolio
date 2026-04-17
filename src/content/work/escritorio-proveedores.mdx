@@ -11,6 +11,10 @@ tags:
   - Testing
 ---
 
+import Carousel from '../../components/Carousel.astro';
+import BeforeAfter from '../../components/BeforeAfter.astro';
+import InsightNotificaciones from '../../components/InsightNotificaciones.astro';
+
 ## El desafío
 
 El escritorio anterior de Mercado Público no priorizaba la información según las necesidades reales de los proveedores. Los usuarios debían buscar manualmente datos críticos para sus negocios, generando fricción y pérdida de tiempo en su operación diaria.
@@ -26,13 +30,28 @@ Con los hallazgos de la investigación se diseñó un nuevo escritorio organizad
 ### Testing
 Se realizaron sesiones de testeo con usuarios reales para validar la nueva propuesta, comparando el escritorio viejo versus el nuevo en términos de eficiencia y satisfacción.
 
+<Carousel images={[
+  { src: '/assets/Arq01.png', alt: 'Arquitectura de contenido 1' },
+  { src: '/assets/Arq02.png', alt: 'Arquitectura de contenido 2' },
+  { src: '/assets/Arq03.png', alt: 'Arquitectura de contenido 3' },
+  { src: '/assets/Arq04.png', alt: 'Arquitectura de contenido 4' },
+  { src: '/assets/Arq05.png', alt: 'Arquitectura de contenido 5' },
+]} />
+
 ## Resultado
 
 ### Escritorio viejo vs. nuevo
 El rediseño introdujo una organización visual clara que permite al proveedor identificar de inmediato sus acciones pendientes y oportunidades de negocio, sin necesidad de navegar entre secciones.
 
+<BeforeAfter
+  before={{ src: '/assets/escritorio-legado.png', alt: 'Escritorio anterior de Mercado Público' }}
+  after={{ src: '/assets/escritorio-nuevo.png', alt: 'Nuevo escritorio de Mercado Público' }}
+/>
+
 ### 5 secciones principales
 El nuevo escritorio se estructura en 5 secciones ordenadas por criticidad para el negocio del proveedor, asegurando que la información más relevante esté siempre visible al inicio.
+
+<InsightNotificaciones />
 
 ## Piloto y validación en producción
 

@@ -1,0 +1,61 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  height?: number;
+  duration?: number;
+}
+const { src, alt, height = 480, duration = 14 } = Astro.props;
+const id = `scroll-${Math.random().toString(36).slice(2, 8)}`;
+---
+
+<div class="screen-wrapper" id={id} style={`height: ${height}px`}>
+  <img src={src} alt={alt} class="screen-img" loading="lazy" />
+</div>
+
+<script define:vars={{ id, duration }}>
+  const wrapper = document.getElementById(id);
+  const img = wrapper?.querySelector('img');
+
+  function init() {
+    if (!wrapper || !img) return;
+    const wrapperH = wrapper.offsetHeight;
+    const imgH = img.offsetHeight;
+    const travel = imgH - wrapperH;
+    if (travel <= 0) return;
+
+    const style = document.createElement('style');
+    style.textContent = `
+      #${id} .screen-img {
+        animation: scroll-${id} ${duration}s linear infinite alternate;
+      }
+      @keyframes scroll-${id} {
+        0%   { transform: translateY(0); }
+        100% { transform: translateY(-${travel}px); }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  if (img?.complete) {
+    init();
+  } else {
+    img?.addEventListener('load', init);
+  }
+</script>
+
+<style>
+  .screen-wrapper {
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    margin-block: 2rem;
+  }
+
+  .screen-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+</style>

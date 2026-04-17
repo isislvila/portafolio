@@ -1,0 +1,62 @@
+---
+interface Props {
+	images: { src: string; alt: string }[];
+}
+const { images } = Astro.props;
+// Duplicamos las imágenes para el loop infinito
+const doubled = [...images, ...images];
+---
+
+<div class="marquee-wrapper">
+	<div class="marquee-track">
+		{doubled.map((img) => (
+			<div class="marquee-slide">
+				<img src={img.src} alt={img.alt} loading="lazy" />
+			</div>
+		))}
+	</div>
+</div>
+
+<style>
+	.marquee-wrapper {
+		overflow: hidden;
+		width: 120%;
+		margin-left: -10%;
+		margin-block: 2.5rem;
+	}
+
+	.marquee-track {
+		display: flex;
+		gap: 1.5rem;
+		width: max-content;
+		animation: marquee 20s linear infinite;
+	}
+
+	.marquee-track:hover {
+		animation-play-state: paused;
+	}
+
+	.marquee-slide {
+		flex-shrink: 0;
+		width: 480px;
+	}
+
+	.marquee-slide img {
+		width: 100%;
+		height: auto;
+		border-radius: 0.75rem;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+		display: block;
+	}
+
+	@keyframes marquee {
+		0%   { transform: translateX(0); }
+		100% { transform: translateX(-50%); }
+	}
+
+	@media (max-width: 50em) {
+		.marquee-slide {
+			width: 300px;
+		}
+	}
+</style>
