@@ -27,8 +27,8 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<div class="hero-text">
-					<h1 class="headline">Hola, diseño para que lo difícil<br/>se sienta <em>fácil</em> y lo técnico, <em>humano.</em></h1>
-					<p class="bio">Soy Isis. He liderado investigación y experiencia usuaria para entender cómo las personas interactúan con lo complejo — y hacerlo simple.</p>
+					<h1 class="headline">Diseño para que lo difícil se sienta <em>fácil</em> y lo técnico, <em>humano.</em></h1>
+					<p class="bio">Hola, soy Isis. He liderado investigación y experiencia usuaria para entender cómo las personas interactúan con lo complejo, y hacerlo simple.</p>
 				</div>
 			</header>
 
@@ -84,6 +84,22 @@ const projects = (await getCollection('work'))
 				</div>
 			</section> */}
 		</main>
+
+		<section class="sobre-mi wrapper">
+			<div class="sobre-divider"></div>
+			<div class="sobre-grid">
+				<h2 class="sobre-titulo">Nacida entre lo simple y lo vivo.</h2>
+				<div class="sobre-col">
+					<p>Crecí cerca de la naturaleza, de lo que no necesita explicación para funcionar. Lo simple siempre me pareció suficiente — y suficiente siempre me pareció hermoso.</p>
+					<p>Llegué a la tecnología desde ahí. Con la misma pregunta que me hacía de niña mirando cómo crecen las cosas: ¿para qué sirve esto realmente? ¿a quién le hace la vida más liviana?</p>
+				</div>
+				<div class="sobre-col">
+					<p>Diseño porque creo que lo digital también puede ser honesto. Que un servicio bien pensado puede sentirse tan natural como algo que siempre estuvo ahí.</p>
+				</div>
+			</div>
+<div class="sobre-divider"></div>
+			<p class="sobre-statement">Menos, pero con <em>intención.</em> Siempre.</p>
+		</section>
 
 		<ContactCTA />
 	</div>
@@ -237,6 +253,68 @@ const projects = (await getCollection('work'))
 		.mention-card {
 			border-radius: 1.5rem;
 			height: 9.5rem;
+		}
+	}
+
+	/* ====================================================== */
+
+	.sobre-mi {
+		padding-block: 5rem;
+	}
+
+	.sobre-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.sobre-titulo {
+		font-family: var(--font-brand);
+		font-size: clamp(1.6rem, 3vw, 2.4rem);
+		font-weight: 400;
+		color: #0a0a14;
+		line-height: 1.15;
+		margin: 0;
+	}
+
+	.sobre-col {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.sobre-col p {
+		font-family: var(--font-body);
+		font-size: var(--text-md);
+		color: #555;
+		line-height: 1.75;
+		margin: 0;
+	}
+
+	.sobre-divider {
+		margin-block: 3rem;
+		border-top: 1px dashed #ccc;
+	}
+
+	.sobre-statement {
+		font-family: var(--font-brand);
+		font-size: clamp(2.4rem, 5.5vw, 5rem);
+		font-weight: 400;
+		color: #0a0a14;
+		line-height: 1.1;
+		margin: 0;
+	}
+
+	.sobre-statement em {
+		font-style: italic;
+		color: var(--accent-regular);
+	}
+
+@media (min-width: 50em) {
+		.sobre-grid {
+			grid-template-columns: 1fr 1.5fr 1.5fr;
+			gap: 3rem;
+			align-items: start;
 		}
 	}
 </style>

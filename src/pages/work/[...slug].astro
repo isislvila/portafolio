@@ -108,6 +108,16 @@ const { Content } = await render(entry);
 		border: 1px solid var(--gray-800);
 	}
 
+	.content :global(img.img-full) {
+		width: 100vw;
+		max-width: 100vw;
+		margin-left: calc(50% - 50vw);
+		border-radius: 0;
+		box-shadow: none;
+		background: none;
+		border: none;
+	}
+
 	.content :global(blockquote) {
 		font-size: var(--text-lg);
 		font-family: var(--font-brand);
