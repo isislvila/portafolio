@@ -11,52 +11,269 @@ tags:
   - Testing
 ---
 
-import Carousel from '../../components/Carousel.astro';
-import BeforeAfter from '../../components/BeforeAfter.astro';
-import InsightNotificaciones from '../../components/InsightNotificaciones.astro';
+import CaseStudyStyles from '../../components/CaseStudyStyles.astro';
 
-## El desafío
+<CaseStudyStyles />
 
-El escritorio anterior de Mercado Público no priorizaba la información según las necesidades reales de los proveedores. Los usuarios debían buscar manualmente datos críticos para sus negocios, generando fricción y pérdida de tiempo en su operación diaria.
+<section class="cs-hero">
+  <div class="cs-hero__meta">
+    <span class="cs-tag">UX Research</span>
+    <span class="cs-tag">Prototipado</span>
+    <span class="cs-tag">Testing</span>
+    <span class="cs-tag">2024</span>
+  </div>
+  <h1 class="cs-hero__title">
+    Escritorio para Proveedores<br />
+    <em>Mercado Público</em>
+  </h1>
+  <p class="cs-hero__subtitle">
+    Más de un millón de proveedores usan Mercado Público para hacer negocios con el Estado.
+    Su escritorio de inicio era el primer lugar que veían cada mañana — y no les decía
+    nada útil. Este proyecto cambió eso.
+  </p>
+  <div class="cs-hero__specs">
+    <div class="cs-spec">
+      <span class="cs-spec__label">Rol</span>
+      <span class="cs-spec__value">UX Research · Diseño · Testing</span>
+    </div>
+    <div class="cs-spec">
+      <span class="cs-spec__label">Cliente</span>
+      <span class="cs-spec__value">ChileCompra / Mercado Público</span>
+    </div>
+    <div class="cs-spec">
+      <span class="cs-spec__label">Métodos</span>
+      <span class="cs-spec__value">Entrevistas · Prototipado iterativo · Pruebas de usabilidad · Hotjar · Encuesta de salida</span>
+    </div>
+    <div class="cs-spec">
+      <span class="cs-spec__label">Año</span>
+      <span class="cs-spec__value">2024</span>
+    </div>
+  </div>
+</section>
 
-## Proceso de diseño
+<figure class="cs-figure cs-figure--full">
+  <img src="/assets/Escritorio-Proveedor.png" alt="Nuevo escritorio para proveedores de Mercado Público" loading="eager" />
+</figure>
 
-### Investigación
-Se realizaron entrevistas en profundidad con proveedores para entender sus flujos de trabajo, necesidades y puntos de dolor con el escritorio existente. Esta etapa permitió identificar qué información era realmente crítica para sus negocios.
+<section class="cs-section">
+  <div class="cs-section__label">Contexto</div>
+  <h2 class="cs-section__title">Un escritorio que no sabía para qué existía</h2>
+  <div class="cs-prose">
+    <p>En Mercado Público, los proveedores son las empresas y personas que venden al Estado. Cada vez que entran a la plataforma, lo primero que ven es su escritorio: un panel de inicio con resúmenes, accesos y notificaciones.</p>
+    <p>El problema era que ese escritorio mostraba información sin jerarquía. Todo tenía el mismo peso visual. Una licitación que vencía en dos horas aparecía igual que una estadística mensual que podía revisarse cualquier día. Para entender qué tenían pendiente, los proveedores tenían que navegar entre secciones, hacer clic en varios lugares, recordar rutas.</p>
+    <p>Una plataforma que se supone hace más eficiente el negocio de los proveedores les estaba robando tiempo desde el primer segundo.</p>
+  </div>
+</section>
 
-### Diseño y prototipado
-Con los hallazgos de la investigación se diseñó un nuevo escritorio organizado por criticidad: de lo más urgente e importante para el negocio del proveedor, a lo menos crítico. El prototipo fue iterado en base a feedback continuo del equipo y usuarios clave.
+<section class="cs-section">
+  <div class="cs-section__label">Investigación</div>
+  <h2 class="cs-section__title">Entender antes de rediseñar</h2>
+  <div class="cs-prose">
+    <p>Antes de tocar Figma, necesitaba entender cómo los proveedores realmente usaban el escritorio — no cómo asumíamos que lo usaban. Realicé entrevistas en profundidad con proveedores de distintos rubros y tamaños, desde microempresas hasta empresas medianas con equipos dedicados a compras públicas.</p>
+    <p>Las preguntas giraron en torno a su rutina diaria: ¿qué es lo primero que revisan al entrar?, ¿qué información buscan activamente?, ¿qué se pierden o descubren tarde?, ¿qué les genera ansiedad o incertidumbre?</p>
+  </div>
+  <div class="cs-findings">
+    <blockquote class="cs-finding">
+      <p>"Entro y lo primero que hago es ir directo a licitaciones, porque el inicio no me dice nada."</p>
+      <cite>Proveedor de servicios tecnológicos</cite>
+    </blockquote>
+    <blockquote class="cs-finding">
+      <p>"A veces me entero de que perdí una licitación por el correo, no por la plataforma."</p>
+      <cite>Proveedor de insumos de oficina</cite>
+    </blockquote>
+    <blockquote class="cs-finding">
+      <p>"Las órdenes de compra son lo más crítico para mí. Si no las acepto a tiempo, pierdo el negocio."</p>
+      <cite>Proveedor de servicios de mantención</cite>
+    </blockquote>
+    <blockquote class="cs-finding">
+      <p>"No sé cuándo vence mi habilidad para contratar. Me doy cuenta cuando ya no puedo operar."</p>
+      <cite>Proveedor del rubro construcción</cite>
+    </blockquote>
+    <blockquote class="cs-finding">
+      <p>"El escritorio me muestra cosas de hace meses. Para qué quiero ver eso primero."</p>
+      <cite>Proveedor de servicios de limpieza</cite>
+    </blockquote>
+    <blockquote class="cs-finding">
+      <p>"Tengo que acordarme yo de revisar si hay algo nuevo. La plataforma no me avisa bien."</p>
+      <cite>Proveedor de alimentos</cite>
+    </blockquote>
+  </div>
+  <div class="cs-prose cs-prose--mt">
+    <p>El patrón era claro: el escritorio existente no priorizaba. Mostraba todo por igual, sin distinción entre lo urgente y lo informativo, entre lo que requería acción inmediata y lo que podía esperar. Los proveedores habían desarrollado workarounds — iban directo a otras secciones, usaban el correo como sistema de alertas, se acordaban ellos mismos de las fechas.</p>
+    <p>La plataforma les estaba transfiriendo su propia carga cognitiva.</p>
+  </div>
+</section>
 
-<img src="/assets/Escritorio-Prototipado.png" alt="Exploración de prototipos del escritorio para proveedores" class="img-full" />
+<section class="cs-section">
+  <div class="cs-section__label">Definición</div>
+  <h2 class="cs-section__title">El principio que ordenó todo el diseño</h2>
+  <div class="cs-highlight-block">
+    <p class="cs-highlight-block__question">De lo más urgente para el negocio, a lo menos crítico.</p>
+    <p class="cs-highlight-block__desc">No se trata de mostrar más información — se trata de mostrarla en el orden correcto. El escritorio tiene que saber qué es urgente antes de que el proveedor llegue a preguntarse.</p>
+  </div>
+  <div class="cs-prose cs-prose--mt">
+    <p>A partir de las entrevistas, construí una jerarquía de necesidades del proveedor. No todas las informaciones valen lo mismo. Una orden de compra pendiente de aceptar tiene consecuencias inmediatas. Una estadística de ventas del trimestre puede revisarse con calma cualquier tarde.</p>
+    <p>El nuevo escritorio se estructuraría siguiendo esa jerarquía: primero lo que requiere acción hoy, después lo que requiere atención pronto, al final lo informativo.</p>
+  </div>
+  <div class="cs-layers">
+    <div class="cs-layer">
+      <div class="cs-layer__badge cs-layer__badge--1">Urgente</div>
+      <div class="cs-layer__content">
+        <h4>Acciones pendientes</h4>
+        <p>Órdenes de compra sin aceptar, licitaciones con plazo próximo a vencer, documentos requeridos. Todo lo que tiene una fecha límite visible.</p>
+      </div>
+    </div>
+    <div class="cs-layer">
+      <div class="cs-layer__badge cs-layer__badge--2">Importante</div>
+      <div class="cs-layer__content">
+        <h4>Estado de habilitación</h4>
+        <p>Vigencia de inscripción en ChileProveedores, documentos próximos a vencer. Lo que afecta la capacidad de operar en la plataforma.</p>
+      </div>
+    </div>
+    <div class="cs-layer">
+      <div class="cs-layer__badge cs-layer__badge--3">Oportunidades</div>
+      <div class="cs-layer__content">
+        <h4>Licitaciones relevantes</h4>
+        <p>Licitaciones activas en el rubro del proveedor, con filtros por monto y fecha. Lo que puede convertirse en negocio.</p>
+      </div>
+    </div>
+    <div class="cs-layer">
+      <div class="cs-layer__badge cs-layer__badge--4">Seguimiento</div>
+      <div class="cs-layer__content">
+        <h4>Estado de propuestas</h4>
+        <p>Resumen de licitaciones en curso, adjudicadas y en evaluación. Para hacer seguimiento sin navegar entre secciones.</p>
+      </div>
+    </div>
+    <div class="cs-layer">
+      <div class="cs-layer__badge cs-layer__badge--5">Informativo</div>
+      <div class="cs-layer__content">
+        <h4>Estadísticas y resumen</h4>
+        <p>Montos facturados, historial de contratos, evolución del negocio. Útil, pero no urgente.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-### Testing
-Se realizaron sesiones de testeo con usuarios reales para validar la nueva propuesta, comparando el escritorio viejo versus el nuevo en términos de eficiencia y satisfacción.
+<section class="cs-section">
+  <div class="cs-section__label">Diseño y prototipado</div>
+  <h2 class="cs-section__title">Iterar para encontrar la forma correcta</h2>
+  <div class="cs-prose">
+    <p>El prototipo pasó por varias iteraciones antes de llegar al testing formal. Cada versión se revisó con el equipo y con usuarios clave, ajustando la jerarquía visual, el peso de cada sección y los patrones de interacción.</p>
+    <p>Una de las decisiones más discutidas fue cuánta información mostrar en cada card. La tensión era constante: más contexto ayuda a tomar decisiones, pero demasiado contexto paraliza o abruma. El criterio fue siempre el mismo — mostrar lo mínimo necesario para que el proveedor sepa si necesita actuar o no.</p>
+  </div>
+  <figure class="cs-figure cs-figure--full">
+    <img src="/assets/Escritorio-Prototipado.png" alt="Exploración de prototipos del escritorio para proveedores" class="img-clean" />
+  </figure>
+  <div class="cs-prose">
+    <p>Paralelamente al prototipado visual, trabajé la arquitectura de contenido: cómo nombrar cada sección, qué etiquetas usar, cómo redactar las notificaciones y estados para que fueran accionables y no solo informativos.</p>
+  </div>
+</section>
 
-<Carousel images={[
-  { src: '/assets/Arq01.png', alt: 'Arquitectura de contenido 1' },
-  { src: '/assets/Arq02.png', alt: 'Arquitectura de contenido 2' },
-  { src: '/assets/Arq03.png', alt: 'Arquitectura de contenido 3' },
-  { src: '/assets/Arq04.png', alt: 'Arquitectura de contenido 4' },
-  { src: '/assets/Arq05.png', alt: 'Arquitectura de contenido 5' },
-]} />
+<section class="cs-section">
+  <div class="cs-section__label">Arquitectura de contenido</div>
+  <h2 class="cs-section__title">La estructura detrás de la interfaz</h2>
+  <div class="cs-prose">
+    <p>El diseño visual de un dashboard puede ser perfecto y aun así fallar si el contenido está mal estructurado. Trabajé la arquitectura de información en paralelo al diseño: qué mostrar, cómo llamarlo, en qué orden presentarlo.</p>
+  </div>
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <div class="marquee-slide"><img src="/assets/Arq01.png" alt="Arquitectura de contenido 1" loading="lazy" /></div>
+      <div class="marquee-slide"><img src="/assets/Arq02.png" alt="Arquitectura de contenido 2" loading="lazy" /></div>
+      <div class="marquee-slide"><img src="/assets/Arq03.png" alt="Arquitectura de contenido 3" loading="lazy" /></div>
+      <div class="marquee-slide"><img src="/assets/Arq04.png" alt="Arquitectura de contenido 4" loading="lazy" /></div>
+      <div class="marquee-slide"><img src="/assets/Arq05.png" alt="Arquitectura de contenido 5" loading="lazy" /></div>
+      <div class="marquee-slide" aria-hidden="true"><img src="/assets/Arq01.png" alt="" loading="lazy" /></div>
+      <div class="marquee-slide" aria-hidden="true"><img src="/assets/Arq02.png" alt="" loading="lazy" /></div>
+      <div class="marquee-slide" aria-hidden="true"><img src="/assets/Arq03.png" alt="" loading="lazy" /></div>
+      <div class="marquee-slide" aria-hidden="true"><img src="/assets/Arq04.png" alt="" loading="lazy" /></div>
+      <div class="marquee-slide" aria-hidden="true"><img src="/assets/Arq05.png" alt="" loading="lazy" /></div>
+    </div>
+  </div>
 
-## Resultado
+</section>
 
-### Escritorio viejo vs. nuevo
-El rediseño introdujo una organización visual clara que permite al proveedor identificar de inmediato sus acciones pendientes y oportunidades de negocio, sin necesidad de navegar entre secciones.
+<section class="cs-section">
+  <div class="cs-section__label">Testing</div>
+  <h2 class="cs-section__title">Validar con usuarios reales antes de lanzar</h2>
+  <div class="cs-prose">
+    <p>Las sesiones de prueba de usabilidad compararon el escritorio anterior con el nuevo prototipo. Los participantes realizaron tareas concretas: encontrar una orden de compra pendiente, verificar su estado de habilitación, identificar licitaciones relevantes para su rubro.</p>
+    <p>El criterio de evaluación fue doble: eficiencia (tiempo en completar cada tarea) y confianza (si el usuario sabía que había encontrado la información correcta).</p>
+  </div>
+  <div class="cs-callout">
+    <p><strong>Hallazgo clave del testing:</strong> en el escritorio anterior, varios participantes completaban la tarea pero expresaban duda sobre si la información era la correcta o si debían seguir buscando. La nueva jerarquía redujo esa incertidumbre — los usuarios llegaban antes y con más seguridad.</p>
+  </div>
+  <h3 class="cs-subsection-title">Antes y después</h3>
+  <div class="cs-comparison">
+    <div class="cs-comparison__item">
+      <div class="cs-comparison__label cs-comparison__label--before">Antes</div>
+      <figure>
+        <img src="/assets/escritorio-legado.png" alt="Escritorio anterior de Mercado Público" />
+      </figure>
+      <p class="cs-comparison__desc">Sin jerarquía clara. Todo con el mismo peso visual. Información histórica mezclada con acciones urgentes. El proveedor tenía que descifrar qué requería su atención.</p>
+    </div>
+    <div class="cs-comparison__item">
+      <div class="cs-comparison__label cs-comparison__label--after">Después</div>
+      <figure>
+        <img src="/assets/escritorio-nuevo.png" alt="Nuevo escritorio de Mercado Público" />
+      </figure>
+      <p class="cs-comparison__desc">Estructura por criticidad. Lo urgente, visible desde el primer scroll. Las acciones pendientes destacadas. El proveedor sabe en segundos si hay algo que necesita atención hoy.</p>
+    </div>
+  </div>
+  <figure class="cs-figure cs-figure--mt">
+    <img src="/assets/escritorio-diagrama.png" alt="Diagrama comparativo del sistema de notificaciones: antes y después" />
+    <figcaption>Sistema de notificaciones: antes y después del rediseño</figcaption>
+  </figure>
+</section>
 
-<BeforeAfter
-  before={{ src: '/assets/escritorio-legado.png', alt: 'Escritorio anterior de Mercado Público' }}
-  after={{ src: '/assets/escritorio-nuevo.png', alt: 'Nuevo escritorio de Mercado Público' }}
-/>
+<section class="cs-section">
+  <div class="cs-section__label">Validación en producción</div>
+  <h2 class="cs-section__title">Lo que aprendimos después del lanzamiento</h2>
+  <div class="cs-prose">
+    <p>El diseño no termina cuando se lanza. Una vez en producción, monitoreamos el comportamiento real de los proveedores para entender si el rediseño cumplía su promesa en condiciones reales — no de laboratorio.</p>
+  </div>
+  <div class="cs-methods">
+    <div class="cs-method">
+      <h3 class="cs-method__title">Hotjar — mapas de calor y sesiones</h3>
+      <p class="cs-method__desc">Analizamos grabaciones de sesión y mapas de calor para entender dónde hacían clic los proveedores, hasta dónde scrolleaban, qué secciones ignoraban. El comportamiento real a veces difiere del comportamiento en testing — y esas diferencias son las más valiosas.</p>
+    </div>
+    <div class="cs-method">
+      <h3 class="cs-method__title">Encuesta de salida</h3>
+      <p class="cs-method__desc">Implementamos una encuesta de salida para recoger la percepción directa de los usuarios sobre la nueva experiencia. Queríamos saber si la jerarquía que diseñamos correspondía con la jerarquía que ellos experimentaban — si lo que pusimos primero era realmente lo primero que necesitaban.</p>
+    </div>
+  </div>
+</section>
 
-### 5 secciones principales
-El nuevo escritorio se estructura en 5 secciones ordenadas por criticidad para el negocio del proveedor, asegurando que la información más relevante esté siempre visible al inicio.
+<section class="cs-section">
+  <div class="cs-section__label">Resultado</div>
+  <h2 class="cs-section__title">Lo que cambió para los proveedores</h2>
+  <div class="cs-outcomes">
+    <div class="cs-outcome">
+      <span class="cs-outcome__icon">⚡️</span>
+      <h4>Acceso inmediato a lo urgente</h4>
+      <p>Las acciones pendientes ahora son visibles desde el primer scroll, sin necesidad de navegar a otras secciones.</p>
+    </div>
+    <div class="cs-outcome">
+      <span class="cs-outcome__icon">🗂</span>
+      <h4>5 secciones por criticidad</h4>
+      <p>Una estructura clara que va de lo urgente a lo informativo, siguiendo la lógica real de trabajo de los proveedores.</p>
+    </div>
+    <div class="cs-outcome">
+      <span class="cs-outcome__icon">🔔</span>
+      <h4>Notificaciones accionables</h4>
+      <p>En lugar de alertas genéricas, cada notificación indica qué hay que hacer y cuándo — no solo que algo ocurrió.</p>
+    </div>
+    <div class="cs-outcome">
+      <span class="cs-outcome__icon">📊</span>
+      <h4>Validación con datos reales</h4>
+      <p>El comportamiento post-lanzamiento se monitoreó con Hotjar y encuestas para iterar sobre la base de uso real, no supuestos.</p>
+    </div>
+  </div>
+</section>
 
-<img src="/assets/escritorio-diagrama.png" alt="Diagrama de notificaciones: antes y después" class="img-clean" />
-
-## Piloto y validación en producción
-
-Una vez lanzado el piloto, se monitoreó el uso real de la plataforma mediante **Hotjar**, analizando mapas de calor y grabaciones de sesión para entender cómo los proveedores interactuaban con el nuevo diseño.
-
-Complementariamente, se implementó una **encuesta de salida** para recoger la percepción directa de los usuarios sobre su experiencia con el nuevo escritorio, permitiendo identificar áreas de mejora continua.
+<section class="cs-section cs-section--closing">
+  <h2 class="cs-section__title">Lo que me llevé</h2>
+  <div class="cs-prose cs-prose--large">
+    <p>Este proyecto me enseñó que el principal problema de muchos dashboards no es que muestren poca información — es que la muestran sin criterio. Agregar más datos no resuelve nada si no hay una jerarquía que le diga al usuario qué mirar primero.</p>
+    <p>La decisión de diseño más importante no fue visual: fue definir qué es urgente y qué no lo es para un proveedor de Mercado Público. Todo lo demás fluyó desde ahí.</p>
+  </div>
+</section>
