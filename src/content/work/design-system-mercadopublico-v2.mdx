@@ -1,0 +1,411 @@
+---
+title: Design System Mercado Público 2
+publishDate: 2023-05-01 00:00:00
+img: /assets/design-system/indice.png
+img_alt: Design System de Mercado Público — Arquitectura de componentes, tokens y lineamientos de contenido
+description: |
+  Lideré la arquitectura de contenido y voz del Design System de Mercado Público, construyendo los lineamientos que definen cómo le habla la plataforma a las personas que la usan.
+tags:
+  - Design System
+  - UX Writing
+  - Contenido
+---
+
+import CaseStudyStyles from '../../components/CaseStudyStyles.astro';
+
+<CaseStudyStyles />
+
+<section class="cs-hero">
+  <div class="cs-hero__meta">
+    <span class="cs-tag">Design System</span>
+    <span class="cs-tag">UX Writing</span>
+    <span class="cs-tag">Contenido</span>
+  </div>
+  <h1 class="cs-hero__title">
+    Design System<br />
+    <em>Mercado Público</em>
+  </h1>
+  <p class="cs-hero__subtitle">
+    Construir un sistema de diseño no es solo ordenar componentes. Es decidir quién habla,
+    cómo suena, y qué dice cuando alguien necesita entender algo urgente en una
+    plataforma que mueve miles de millones de pesos en compras del Estado.
+  </p>
+  <div class="cs-hero__specs">
+    <div class="cs-spec">
+      <span class="cs-spec__label">Rol</span>
+      <span class="cs-spec__value">Design System Lead</span>
+    </div>
+    <div class="cs-spec">
+      <span class="cs-spec__label">Cliente</span>
+      <span class="cs-spec__value">ChileCompra / Mercado Público</span>
+    </div>
+    <div class="cs-spec">
+      <span class="cs-spec__label">Herramientas</span>
+      <span class="cs-spec__value">Figma · Tokens Studio · Notion</span>
+    </div>
+    <div class="cs-spec">
+      <span class="cs-spec__label">Entregables</span>
+      <span class="cs-spec__value">Librería de componentes · Design tokens · Lineamientos de voz y tono · Guía de contenido</span>
+    </div>
+  </div>
+</section>
+
+<figure class="cs-figure cs-figure--full">
+  <img src="/assets/design-system/indice.png" alt="Vista general del Design System de Mercado Público en Figma" loading="eager" />
+</figure>
+
+<section class="cs-section">
+  <div class="cs-section__label">Contexto</div>
+  <h2 class="cs-section__title">Una plataforma crítica con un lenguaje roto</h2>
+  <div class="cs-prose">
+    <p>Mercado Público es donde el Estado de Chile compra. Hospitales, municipios, ministerios — todos pasan por ahí para adquirir desde insumos médicos hasta servicios tecnológicos. Es una plataforma que no puede darse el lujo de ser confusa.</p>
+    <p>Cuando llegué a liderar el Design System, lo primero que encontré no fue un problema de componentes. Fue un problema de voz. Cada equipo escribía a su manera. Algunos flujos sonaban a resolución judicial. Otros, a correo corporativo de los años 90. Muy pocos sonaban a una conversación entre personas reales.</p>
+    <p>El sistema existente tenía componentes, sí. Pero no tenía criterio compartido sobre qué decir en cada uno de ellos. Eso es un vacío que se nota: en los botones que generan duda, en los mensajes de error que señalan sin orientar, en las etiquetas que solo entiende quien lleva años dentro del equipo.</p>
+  </div>
+</section>
+
+<section class="cs-section">
+  <div class="cs-section__label">Descubrimiento</div>
+  <h2 class="cs-section__title">Lo que encontramos al mirar con cuidado</h2>
+  <div class="cs-prose">
+    <p>Antes de proponer cualquier solución, hice un diagnóstico del estado actual del contenido. Revisé flujos completos, etiquetas, mensajes de sistema, CTAs y documentación interna. Lo que encontré fue revelador.</p>
+  </div>
+  <div class="cs-findings">
+    <blockquote class="cs-finding">
+      <p>"Cancelar" en un botón que en realidad confirmaba un pago.</p>
+      <cite>Hallazgo en flujo de adquisición directa</cite>
+    </blockquote>
+    <blockquote class="cs-finding">
+      <p>Abreviaturas internas —CM, RFI, OOPP— sin contexto ni glosario.</p>
+      <cite>Hallazgo en módulo de licitaciones</cite>
+    </blockquote>
+    <blockquote class="cs-finding">
+      <p>Mensajes de error que describían el problema pero no ofrecían ninguna salida.</p>
+      <cite>Hallazgo en validaciones de formulario</cite>
+    </blockquote>
+    <blockquote class="cs-finding">
+      <p>El mismo concepto nombrado de tres formas distintas en tres pantallas consecutivas.</p>
+      <cite>Hallazgo en flujo de órdenes de compra</cite>
+    </blockquote>
+    <blockquote class="cs-finding">
+      <p>Anglicismos como <em>backoffice</em> mezclados con tecnicismos legales, sin jerarquía clara.</p>
+      <cite>Hallazgo en documentación del sistema</cite>
+    </blockquote>
+    <blockquote class="cs-finding">
+      <p>Instrucciones redactadas en voz pasiva que diluían la responsabilidad del sistema.</p>
+      <cite>Hallazgo transversal en más de 12 pantallas</cite>
+    </blockquote>
+  </div>
+  <div class="cs-prose cs-prose--mt">
+    <p>El diagnóstico confirmó lo que intuía: el problema no era la ausencia de contenido, era la ausencia de criterio. Nadie sabía qué palabras usar porque nadie había definido cómo debía sonar esta plataforma.</p>
+  </div>
+</section>
+
+<section class="cs-section">
+  <div class="cs-section__label">Definición</div>
+  <h2 class="cs-section__title">La pregunta que lo ordenó todo</h2>
+  <div class="cs-prose">
+    <p>Necesitaba un filtro simple, aplicable por cualquier persona del equipo, que permitiera evaluar cualquier pieza de contenido sin necesidad de ser escritora profesional.</p>
+  </div>
+  <div class="cs-highlight-block">
+    <p class="cs-highlight-block__question">¿Existen personas que hablen así?</p>
+    <p class="cs-highlight-block__desc">Si la respuesta era no, había que reescribir. Esta pregunta se convirtió en el norte de todo el proyecto.</p>
+  </div>
+  <div class="cs-prose cs-prose--mt">
+    <p>Desde ahí, trabajé junto al Departamento de Comunicaciones de ChileCompra para definir los principios que guiarían todo el contenido del sistema. No como una lista de reglas, sino como una forma de pensar antes de escribir.</p>
+  </div>
+  <div class="cs-principles">
+    <div class="cs-principle">
+      <span class="cs-principle__num">01</span>
+      <h3 class="cs-principle__title">Claro</h3>
+      <p class="cs-principle__desc">El usuario entiende qué está pasando y qué puede hacer. Sin ambigüedad, sin jerga innecesaria, sin frases que requieran ser leídas dos veces.</p>
+    </div>
+    <div class="cs-principle">
+      <span class="cs-principle__num">02</span>
+      <h3 class="cs-principle__title">Conciso</h3>
+      <p class="cs-principle__desc">Solo lo necesario. El contenido que sobra no es neutro: distrae, dilata y genera fricción. Cada palabra tiene que ganar su lugar.</p>
+    </div>
+    <div class="cs-principle">
+      <span class="cs-principle__num">03</span>
+      <h3 class="cs-principle__title">Útil</h3>
+      <p class="cs-principle__desc">El contenido orienta, no solo informa. Le dice al usuario qué hacer, no solo qué pasó. Anticipa dudas y ofrece salidas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section">
+  <div class="cs-section__label">Arquitectura</div>
+  <h2 class="cs-section__title">La estructura del sistema</h2>
+  <div class="cs-prose">
+    <p>El Design System se organizó siguiendo los principios de diseño atómico, con una capa adicional que no suele estar en los sistemas tradicionales: los lineamientos de contenido como parte constitutiva del sistema, no como anexo.</p>
+  </div>
+  <div class="cs-layers">
+    <div class="cs-layer">
+      <div class="cs-layer__badge">Fundación</div>
+      <div class="cs-layer__content">
+        <h4>Tokens de diseño</h4>
+        <p>Colores, tipografía, espaciado, radios, sombras. Los valores primitivos que alimentan todo lo demás.</p>
+      </div>
+    </div>
+    <div class="cs-layer cs-layer--connector">↓</div>
+    <div class="cs-layer">
+      <div class="cs-layer__badge">Átomos</div>
+      <div class="cs-layer__content">
+        <h4>Componentes base</h4>
+        <p>Botones, inputs, etiquetas, iconos, badges. Los bloques más pequeños con sus estados y variantes.</p>
+      </div>
+    </div>
+    <div class="cs-layer cs-layer--connector">↓</div>
+    <div class="cs-layer">
+      <div class="cs-layer__badge">Moléculas</div>
+      <div class="cs-layer__content">
+        <h4>Patrones compuestos</h4>
+        <p>Formularios, tarjetas, modales, tablas, navegación. Componentes que combinan átomos con lógica.</p>
+      </div>
+    </div>
+    <div class="cs-layer cs-layer--connector">↓</div>
+    <div class="cs-layer">
+      <div class="cs-layer__badge">Voz</div>
+      <div class="cs-layer__content">
+        <h4>Lineamientos de contenido</h4>
+        <p>Principios, patrones de escritura, tono por contexto, guía de CTAs, manejo de errores, glosario.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section">
+  <div class="cs-section__label">Tokens de diseño</div>
+  <h2 class="cs-section__title">Un sistema de valores que escala</h2>
+  <div class="cs-prose">
+    <p>Para establecer un sistema visual consistente y sostenible, definimos una arquitectura de tokens en tres niveles. La lógica: que cualquier cambio global —un rebrand, una nueva temática— pudiera propagarse desde un solo lugar.</p>
+  </div>
+  <div class="cs-token-levels">
+    <div class="cs-token-level">
+      <div class="cs-token-level__header">
+        <span class="cs-token-level__num">01</span>
+        <h3>Tokens primitivos</h3>
+      </div>
+      <p>Los valores brutos: todos los colores, tamaños tipográficos, unidades de espaciado y radios posibles. No tienen semántica aún — son el vocabulario completo del sistema.</p>
+      <div class="cs-token-example">
+        <code>color.blue.500</code>
+        <code>spacing.4</code>
+        <code>font.size.lg</code>
+      </div>
+    </div>
+    <div class="cs-token-level">
+      <div class="cs-token-level__header">
+        <span class="cs-token-level__num">02</span>
+        <h3>Tokens semánticos</h3>
+      </div>
+      <p>Los valores con propósito. Le dan significado a los primitivos y comunican la intención de uso. Son los que usa directamente el equipo de diseño.</p>
+      <div class="cs-token-example">
+        <code>color.action.primary</code>
+        <code>color.feedback.error</code>
+        <code>spacing.component.gap</code>
+      </div>
+    </div>
+    <div class="cs-token-level">
+      <div class="cs-token-level__header">
+        <span class="cs-token-level__num">03</span>
+        <h3>Tokens de componente</h3>
+      </div>
+      <p>Los más específicos. Definen los valores de cada componente individual, mapeados a los semánticos. Son el puente entre diseño y desarrollo.</p>
+      <div class="cs-token-example">
+        <code>button.primary.background</code>
+        <code>input.border.focus</code>
+        <code>badge.text.color</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section">
+  <div class="cs-section__label">Componentes</div>
+  <h2 class="cs-section__title">Cada componente es una decisión de contenido</h2>
+  <div class="cs-prose">
+    <p>Lo que aprendí construyendo esta librería es que un componente sin criterio de contenido es solo una cáscara. Un botón sin guía de etiquetado puede generar confusión. Un mensaje de error sin patrón de redacción puede frustrar en el peor momento.</p>
+    <p>Cada componente en la librería se diseñó con sus estados, variantes e interacciones — pero también con sus lineamientos de contenido integrados directamente en la documentación.</p>
+  </div>
+  <div class="cs-component-pillars">
+    <div class="cs-pillar">
+      <h3 class="cs-pillar__title">Configurables</h3>
+      <p class="cs-pillar__desc">Cada componente expone sus propiedades en Figma para que los equipos puedan configurar variantes, estados y contenido desde un solo panel, sin romper la estructura.</p>
+    </div>
+    <div class="cs-pillar">
+      <h3 class="cs-pillar__title">Con estados completos</h3>
+      <p class="cs-pillar__desc">Default, hover, focus, disabled, error, loading. Cada estado documentado con su comportamiento visual y su criterio de contenido.</p>
+    </div>
+    <div class="cs-pillar">
+      <h3 class="cs-pillar__title">Accesibles</h3>
+      <p class="cs-pillar__desc">Contraste validado según WCAG 2.1 AA, etiquetas ARIA documentadas, jerarquía de foco definida. La accesibilidad como criterio de diseño, no de revisión final.</p>
+    </div>
+    <div class="cs-pillar">
+      <h3 class="cs-pillar__title">Escalables</h3>
+      <p class="cs-pillar__desc">Construidos con auto-layout y tokens para que funcionen en distintos contextos sin perder coherencia. Diseñados para cinco productos distintos, con una sola fuente de verdad.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section">
+  <div class="cs-section__label">Voz y tono</div>
+  <h2 class="cs-section__title">Lineamientos de contenido: la capa que cambia todo</h2>
+  <div class="cs-prose">
+    <p>Esta fue la parte del sistema que más me costó argumentar y que más impacto tuvo. Los lineamientos de contenido no vivieron en un documento separado de Drive. Se integraron al sistema con el mismo peso que la tipografía o los colores.</p>
+  </div>
+  <figure class="cs-figure">
+    <img src="/assets/design-system/lineamientos.png" alt="Lineamientos de contenido y UX Writing del Design System" />
+    <figcaption>Lineamientos de voz, tono y escritura — integrados en la librería</figcaption>
+  </figure>
+  <div class="cs-writing-patterns">
+    <div class="cs-pattern">
+      <h4 class="cs-pattern__title">Preferir el pasado simple</h4>
+      <div class="cs-pattern__comparison">
+        <div class="cs-pattern__bad">
+          <span class="cs-pattern__badge cs-pattern__badge--bad">Antes</span>
+          <p>La solicitud <strong>ha sido procesada</strong> correctamente.</p>
+        </div>
+        <div class="cs-pattern__good">
+          <span class="cs-pattern__badge cs-pattern__badge--good">Después</span>
+          <p>La solicitud <strong>fue procesada</strong> correctamente.</p>
+        </div>
+      </div>
+      <p class="cs-pattern__reason">El pasado simple es más directo y más humano. La voz pasiva diluye y alarga.</p>
+    </div>
+    <div class="cs-pattern">
+      <h4 class="cs-pattern__title">CTAs como promesas</h4>
+      <div class="cs-pattern__comparison">
+        <div class="cs-pattern__bad">
+          <span class="cs-pattern__badge cs-pattern__badge--bad">Antes</span>
+          <p><strong>Continuar</strong></p>
+        </div>
+        <div class="cs-pattern__good">
+          <span class="cs-pattern__badge cs-pattern__badge--good">Después</span>
+          <p><strong>Enviar solicitud</strong></p>
+        </div>
+      </div>
+      <p class="cs-pattern__reason">Un CTA es una promesa: le dice al usuario exactamente qué va a pasar. Esa promesa tiene que cumplirse.</p>
+    </div>
+    <div class="cs-pattern">
+      <h4 class="cs-pattern__title">Errores que orientan</h4>
+      <div class="cs-pattern__comparison">
+        <div class="cs-pattern__bad">
+          <span class="cs-pattern__badge cs-pattern__badge--bad">Antes</span>
+          <p>Error al procesar la solicitud. Código: 403.</p>
+        </div>
+        <div class="cs-pattern__good">
+          <span class="cs-pattern__badge cs-pattern__badge--good">Después</span>
+          <p>No tienes permiso para ver esto. Si crees que es un error, contacta al administrador de tu organización.</p>
+        </div>
+      </div>
+      <p class="cs-pattern__reason">Los errores señalan el problema Y ofrecen una salida. El usuario no debería quedar sin opciones.</p>
+    </div>
+    <div class="cs-pattern">
+      <h4 class="cs-pattern__title">Ofrecer salidas</h4>
+      <div class="cs-pattern__comparison">
+        <div class="cs-pattern__bad">
+          <span class="cs-pattern__badge cs-pattern__badge--bad">Antes</span>
+          <p>Para continuar, debes completar todos los campos obligatorios.</p>
+        </div>
+        <div class="cs-pattern__good">
+          <span class="cs-pattern__badge cs-pattern__badge--good">Después</span>
+          <p>Falta completar el RUT de la empresa. También puedes <strong>guardar como borrador</strong> y retomar más tarde.</p>
+        </div>
+      </div>
+      <p class="cs-pattern__reason">No todas las personas quieren seguir el camino que diseñamos. El contenido tiene que anticipar eso.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section">
+  <div class="cs-section__label">Tensión</div>
+  <h2 class="cs-section__title">El matiz de lo técnico-legal</h2>
+  <div class="cs-prose">
+    <p>Mercado Público tiene una particularidad que complicó algunas decisiones: sus usuarios compradores son expertos en compras públicas. Eso significa que hay términos técnicos y legales que no se pueden eliminar. <em>Licitación pública, trato directo, adjudicación</em> — estos son conceptos del vocabulario profesional de quienes usan la plataforma.</p>
+    <p>El reto no era simplificar a cualquier costo. Era encontrar el punto de equilibrio donde el lenguaje técnico necesario coexiste con la mayor claridad posible para quienes recién se incorporan. Ese matiz se documentó explícitamente en el sistema.</p>
+  </div>
+  <div class="cs-callout">
+    <p><strong>Regla que definimos:</strong> si el término técnico existe porque es legal o regulatorio, se mantiene y se contextualiza. Si existe porque "siempre se ha dicho así", se evalúa y probablemente se reemplaza.</p>
+  </div>
+</section>
+
+<section class="cs-section">
+  <div class="cs-section__label">Proceso</div>
+  <h2 class="cs-section__title">Cómo se construyó</h2>
+  <div class="cs-prose">
+    <p>El sistema no se entregó todo de una vez. Se lanzó de forma incremental, priorizando los componentes de mayor uso y los lineamientos más urgentes primero. En cada etapa, se recogió feedback de los equipos que lo usaban.</p>
+  </div>
+  <div class="cs-timeline">
+    <div class="cs-timeline__item">
+      <div class="cs-timeline__marker"></div>
+      <div class="cs-timeline__content">
+        <h4>Diagnóstico y principios</h4>
+        <p>Auditoría del contenido existente, entrevistas con equipos, definición de principios junto a Comunicaciones.</p>
+      </div>
+    </div>
+    <div class="cs-timeline__item">
+      <div class="cs-timeline__marker"></div>
+      <div class="cs-timeline__content">
+        <h4>Fundación del sistema</h4>
+        <p>Definición de tokens primitivos y semánticos, paleta de color, tipografía, espaciado. La base sobre la que todo se construye.</p>
+      </div>
+    </div>
+    <div class="cs-timeline__item">
+      <div class="cs-timeline__marker"></div>
+      <div class="cs-timeline__content">
+        <h4>Componentes atómicos</h4>
+        <p>Botones, inputs, badges, iconos. Cada uno con estados completos y lineamiento de contenido integrado.</p>
+      </div>
+    </div>
+    <div class="cs-timeline__item">
+      <div class="cs-timeline__marker"></div>
+      <div class="cs-timeline__content">
+        <h4>Patrones compuestos</h4>
+        <p>Formularios, tablas, modales, navegación. Componentes con lógica más compleja y mayor dependencia de contenido.</p>
+      </div>
+    </div>
+    <div class="cs-timeline__item">
+      <div class="cs-timeline__marker"></div>
+      <div class="cs-timeline__content">
+        <h4>Lineamientos de voz y tono</h4>
+        <p>Guía completa de escritura, patrones de CTA, manejo de errores, glosario de términos técnicos y criterios de simplificación.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section">
+  <div class="cs-section__label">Resultado</div>
+  <h2 class="cs-section__title">Lo que cambió</h2>
+  <div class="cs-prose">
+    <p>Los lineamientos de contenido se integraron al Design System con el mismo peso que la tipografía, los colores o los componentes. No como un anexo. Como parte viva del sistema, consultable en la misma herramienta donde los equipos diseñan.</p>
+    <p>Eso cambió algo concreto: los equipos dejaron de tomar decisiones de contenido de manera intuitiva y empezaron a tener criterios compartidos. Las revisiones llegaron antes en el proceso. La plataforma empezó a sonar más pareja, más coherente, más humana.</p>
+  </div>
+  <div class="cs-outcomes">
+    <div class="cs-outcome">
+      <h4>Una sola fuente de verdad</h4>
+      <p>Cinco productos, un sistema. Los equipos saben exactamente dónde buscar el componente correcto y cómo escribir en él.</p>
+    </div>
+    <div class="cs-outcome">
+      <h4>Contenido como criterio de diseño</h4>
+      <p>Las decisiones de contenido se toman en el mismo espacio donde se diseña, no después ni aparte.</p>
+    </div>
+    <div class="cs-outcome">
+      <h4>Iteración más rápida</h4>
+      <p>Con tokens bien definidos, propagar cambios visuales dejó de ser una tarea de semanas.</p>
+    </div>
+    <div class="cs-outcome">
+      <h4>Accesibilidad documentada</h4>
+      <p>Cada componente con sus criterios WCAG verificados antes del lanzamiento, no como revisión final.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section cs-section--closing">
+  <h2 class="cs-section__title">Lo que me llevé</h2>
+  <div class="cs-prose cs-prose--large">
+    <p>Este proyecto me confirmó algo que creo profundamente sobre el diseño de sistemas: <strong>las decisiones de contenido son decisiones de arquitectura.</strong></p>
+    <p>Definir cómo habla un producto no es un detalle de último minuto. Es una elección que atraviesa cada pantalla, cada flujo, cada momento en que un usuario necesita entender qué está pasando y qué puede hacer.</p>
+    <p>Cuando esa decisión se toma con cuidado y se documenta bien, el resultado no es solo una plataforma más consistente. Es una plataforma que se siente más confiable.</p>
+  </div>
+</section>
