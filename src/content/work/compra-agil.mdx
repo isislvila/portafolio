@@ -1,0 +1,364 @@
+---
+title: Compra Ágil — Mercado Público
+publishDate: 2023-06-01 00:00:00
+img: /assets/compra-agil/hero.png
+img_alt: Interfaz del buscador de Compra Ágil en Mercado Público
+description: |
+  Diseño del producto que operó la nueva ley de compras públicas para transacciones menores a 100 UTM, desde la estrategia hasta los componentes de interfaz.
+tags:
+  - Producto nuevo
+  - UX Lead
+  - Estrategia
+---
+
+import CaseStudyStyles from '../../components/CaseStudyStyles.astro';
+
+<CaseStudyStyles />
+
+<section class="ca-hero">
+  <div class="ca-tags">
+    <span class="ca-tag">Producto nuevo</span>
+    <span class="ca-tag">UX Lead</span>
+    <span class="ca-tag">Estrategia</span>
+    <span class="ca-tag">2023</span>
+  </div>
+  <h1 class="ca-hero__title">
+    Compra Ágil<br />
+    <em>Mercado Público</em>
+  </h1>
+  <p class="ca-hero__sub">
+    El Estado chileno hace miles de compras pequeñas cada día.
+    Antes, cada una pasaba por el mismo proceso burocrático que una licitación millonaria.
+    Diseñé el producto que cambió eso.
+  </p>
+  <div class="ca-specs">
+    <div class="ca-spec">
+      <span class="ca-spec__label">Rol</span>
+      <span class="ca-spec__val">UX Lead · Estrategia · Diseño</span>
+    </div>
+    <div class="ca-spec">
+      <span class="ca-spec__label">Cliente</span>
+      <span class="ca-spec__val">ChileCompra / Mercado Público</span>
+    </div>
+    <div class="ca-spec">
+      <span class="ca-spec__label">Usuarios</span>
+      <span class="ca-spec__val">Compradores del Estado + Proveedores</span>
+    </div>
+    <div class="ca-spec">
+      <span class="ca-spec__label">Año</span>
+      <span class="ca-spec__val">2023</span>
+    </div>
+  </div>
+</section>
+
+<figure class="ca-fig ca-fig--full">
+  <img src="/assets/compra-agil/hero.png" alt="Interfaz del buscador de Compra Ágil en Mercado Público" loading="eager" />
+</figure>
+
+<section class="ca-section">
+  <div class="ca-metrics">
+    <div class="ca-metric">
+      <span class="ca-metric__num">&lt;100 UTM</span>
+      <span class="ca-metric__lbl">umbral legal que define una Compra Ágil</span>
+    </div>
+    <div class="ca-metric">
+      <span class="ca-metric__num">1 paso</span>
+      <span class="ca-metric__lbl">publicar y cotizar en un solo flujo</span>
+    </div>
+    <div class="ca-metric">
+      <span class="ca-metric__num">2 perfiles</span>
+      <span class="ca-metric__lbl">comprador y proveedor diseñados en paralelo</span>
+    </div>
+    <div class="ca-metric">
+      <span class="ca-metric__num">6 estados</span>
+      <span class="ca-metric__lbl">de orden diseñados desde cero con semántica clara</span>
+    </div>
+  </div>
+</section>
+
+<section class="ca-section">
+  <div class="ca-section__label">Contexto</div>
+  <h2 class="ca-section__title">Una ley nueva que necesitaba un producto nuevo</h2>
+  <div class="ca-prose">
+    <p>La nueva ley de compras públicas estableció una modalidad especial para adquisiciones menores a 100 UTM: Compra Ágil. La promesa era simple — más velocidad, menos burocracia. El problema era que no existía ninguna herramienta digital para operarla. Alguien tenía que diseñarla desde cero.</p>
+    <p>Lideré el diseño de ese producto: desde la definición estratégica hasta los componentes de interfaz, pasando por la arquitectura de flujos para ambos lados del mercado — organismos del Estado que compran y proveedores que cotizan.</p>
+  </div>
+</section>
+
+<section class="ca-section">
+  <div class="ca-section__label">El problema</div>
+  <h2 class="ca-section__title">Lo que frena una compra pequeña</h2>
+  <div class="ca-findings">
+    <div class="ca-finding">
+      <div class="ca-finding__badge ca-badge--red">Proceso único para todo</div>
+      <h3 class="ca-finding__title">El mismo flujo para $50.000 y $500.000.000</h3>
+      <p class="ca-finding__desc">Los organismos del Estado usaban licitaciones formales incluso para insumos básicos — formularios obligatorios, plazos extendidos, publicaciones legales — sin importar el monto. El proceso no tenía criterio de proporcionalidad.</p>
+    </div>
+    <div class="ca-finding">
+      <div class="ca-finding__badge ca-badge--amber">Tiempo como barrera</div>
+      <h3 class="ca-finding__title">Semanas de proceso para compras urgentes</h3>
+      <p class="ca-finding__desc">Una compra que debería cerrarse en días podía tardar semanas en completar el ciclo administrativo. Las unidades de compra perdían eficiencia operativa y los proveedores pequeños abandonaban el mercado.</p>
+    </div>
+    <div class="ca-finding">
+      <div class="ca-finding__badge ca-badge--gray">Sin visibilidad para proveedores</div>
+      <h3 class="ca-finding__title">Mercado opaco para quienes cotizan</h3>
+      <p class="ca-finding__desc">Los proveedores no tenían forma de encontrar oportunidades de compra menores. No había buscador dedicado, no había estados claros, no había notificaciones estructuradas para este tipo de transacción.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ca-section">
+  <div class="ca-section__label">Hipótesis</div>
+  <h2 class="ca-section__title">Lo que nos propusimos demostrar</h2>
+  <div class="ca-hypothesis">
+    <p class="ca-hypothesis__text">Si creamos un flujo dedicado para compras menores a 100 UTM — con publicación en un paso, estados claros y visibilidad para ambos lados del mercado — entonces reduciremos el tiempo de ciclo y aumentaremos la participación de proveedores.</p>
+    <p class="ca-hypothesis__note">El objetivo no era digitalizar el proceso existente. Era reemplazarlo.</p>
+  </div>
+</section>
+
+<section class="ca-section">
+  <div class="ca-section__label">Preguntas que nos guiaron</div>
+  <h2 class="ca-section__title">¿Cómo podríamos crear un mundo donde...</h2>
+  <div class="ca-hmw">
+    <div class="ca-hmw__item">publicar una compra sea tan rápido como completar un formulario?</div>
+    <div class="ca-hmw__item">los proveedores encuentren oportunidades sin depender de correos o contactos informales?</div>
+    <div class="ca-hmw__item">el estado de una orden sea siempre legible en un vistazo, para ambos perfiles?</div>
+    <div class="ca-hmw__item">compradores y proveedores hablen el mismo idioma dentro del sistema?</div>
+  </div>
+</section>
+
+<section class="ca-section">
+  <div class="ca-section__label">Proceso</div>
+  <h2 class="ca-section__title">Cómo lo construimos</h2>
+  <div class="ca-timeline">
+    <div class="ca-tl-item">
+      <div class="ca-tl-marker"><span>01</span></div>
+      <div class="ca-tl-content">
+        <h4>Investigación de contexto normativo</h4>
+        <p>Lectura y síntesis de la nueva ley de compras públicas. Entrevistas con el equipo legal y con unidades de compra para entender el alcance real de "compra ágil" en la práctica — qué permite la ley y qué queda como decisión de diseño.</p>
+      </div>
+    </div>
+    <div class="ca-tl-item">
+      <div class="ca-tl-marker"><span>02</span></div>
+      <div class="ca-tl-content">
+        <h4>Mapeo de flujos para dos perfiles</h4>
+        <p>El producto tiene dos lados: compradores que publican y proveedores que cotizan. Mapeé ambos journeys por separado antes de buscar puntos de convergencia. Cada perfil tiene necesidades, contextos y momentos de acción distintos.</p>
+      </div>
+    </div>
+    <figure class="ca-fig ca-fig--inline">
+      <img src="/assets/compra-agil/flujos.png" alt="Mapeo de flujos para comprador y proveedor en Compra Ágil" />
+      <figcaption>Journey maps para comprador y proveedor — la base de la arquitectura del producto</figcaption>
+    </figure>
+    <div class="ca-tl-item">
+      <div class="ca-tl-marker"><span>03</span></div>
+      <div class="ca-tl-content">
+        <h4>Definición del sistema de estados</h4>
+        <p>Diseñé la taxonomía completa de estados de una orden: cuándo existe cada uno, qué lo activa, qué acciones habilita, y cómo comunicarlo a cada perfil. Esta decisión fue anterior a cualquier pantalla — sin la taxonomía clara, el sistema no tiene criterio.</p>
+      </div>
+    </div>
+    <div class="ca-tl-item">
+      <div class="ca-tl-marker"><span>04</span></div>
+      <div class="ca-tl-content">
+        <h4>Prototipado y validación</h4>
+        <p>Prototipos iterativos del buscador, el formulario de publicación y el detalle de orden. Validación con compradores reales de organismos públicos — no solo con el equipo interno.</p>
+      </div>
+    </div>
+    <figure class="ca-fig ca-fig--inline">
+      <img src="/assets/compra-agil/prototipos.png" alt="Exploración de prototipos de Compra Ágil" />
+      <figcaption>Iteraciones de prototipo — buscador, formulario y detalle de orden</figcaption>
+    </figure>
+    <div class="ca-tl-item">
+      <div class="ca-tl-marker"><span>05</span></div>
+      <div class="ca-tl-content">
+        <h4>Diseño de componentes y handoff</h4>
+        <p>Librería de componentes específicos para Compra Ágil: cards de resultado, pills de estado, filtros, formulario de publicación. Todo documentado para el equipo de desarrollo con criterios de contenido integrados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ca-section">
+  <div class="ca-section__label">Sistema de estados</div>
+  <h2 class="ca-section__title">6 estados diseñados desde cero</h2>
+  <div class="ca-prose">
+    <p>Cada estado tiene su propio significado, color semántico y conjunto de acciones permitidas. El sistema es legible tanto para el comprador como para el proveedor — no son etiquetas, son contratos de comportamiento.</p>
+  </div>
+  <figure class="ca-fig ca-fig--inline">
+    <img src="/assets/compra-agil/estados-componentes.png" alt="Sistema de estados de Compra Ágil — pills y cards" />
+    <figcaption>Componentes de estado — pills, cards y criterios de uso</figcaption>
+  </figure>
+  <div class="ca-states">
+    <div class="ca-state">
+      <div class="ca-state__pill ca-pill--orden">Orden de compra emitida</div>
+      <p class="ca-state__desc">El comprador seleccionó una cotización y emitió la orden. El proveedor debe aceptar dentro del plazo definido para concretar el negocio. Es el estado de mayor urgencia para el proveedor.</p>
+    </div>
+    <div class="ca-state">
+      <div class="ca-state__pill ca-pill--recibiendo">Publicada recibiendo cotizaciones</div>
+      <p class="ca-state__desc">La compra está activa. Cualquier proveedor habilitado puede enviar su cotización dentro del plazo publicado. Principal estado de oportunidad para proveedores.</p>
+    </div>
+    <div class="ca-state">
+      <div class="ca-state__pill ca-pill--segundo">Segundo llamado</div>
+      <p class="ca-state__desc">La compra no recibió cotizaciones suficientes en el primer llamado. Se extiende el plazo para ampliar la participación — segunda oportunidad para proveedores que no alcanzaron el primero.</p>
+    </div>
+    <div class="ca-state">
+      <div class="ca-state__pill ca-pill--desierta">Desierta</div>
+      <p class="ca-state__desc">No se recibieron cotizaciones o ninguna cumplió los requisitos. La compra se declara desierta y el comprador debe iniciar un nuevo proceso. Estado terminal — no tiene acción disponible para el proveedor.</p>
+    </div>
+    <div class="ca-state">
+      <div class="ca-state__pill ca-pill--cancelada">Cancelada</div>
+      <p class="ca-state__desc">El organismo comprador canceló la compra antes de completar el proceso. Puede ocurrir en cualquier etapa activa. El proveedor no puede actuar.</p>
+    </div>
+    <div class="ca-state">
+      <div class="ca-state__pill ca-pill--cerrada">Cerrada a la espera de resultados</div>
+      <p class="ca-state__desc">El plazo de cotización terminó. El comprador está evaluando las propuestas recibidas antes de emitir la orden. Estado de espera para el proveedor.</p>
+    </div>
+  </div>
+  <div class="ca-callout">
+    <p><strong>Decisión de diseño clave:</strong> los estados no son solo etiquetas visuales. Cada uno define qué puede hacer el usuario en ese momento. El color, el texto y las acciones disponibles cambian según el estado. El sistema tiene criterio, no solo apariencia.</p>
+  </div>
+</section>
+
+<section class="ca-section">
+  <div class="ca-section__label">El producto</div>
+  <h2 class="ca-section__title">Buscador de Compra Ágil</h2>
+  <div class="ca-prose">
+    <p>La vista central del proveedor: encontrar oportunidades activas, filtrar por estado, región, rubro y presupuesto, y acceder al detalle de cada orden. Diseñado para operar desde cualquier dispositivo.</p>
+  </div>
+  <div class="ca-screens">
+    <div class="ca-screen-group">
+      <div class="ca-screen-label">Versión desktop</div>
+      <figure class="ca-fig ca-fig--screen">
+        <img src="/assets/compra-agil/buscador-desktop.png" alt="Buscador de Compra Ágil — versión desktop" />
+      </figure>
+    </div>
+    <div class="ca-screen-group">
+      <div class="ca-screen-label">Versión mobile</div>
+      <div class="ca-phone-wrap">
+        <div class="ca-phone">
+          <div class="ca-phone__bar">
+            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"><path d="M6 1L1.5 6L6 11" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <span>Compra Ágil</span>
+          </div>
+          <div class="ca-phone__search">
+            <input type="text" placeholder="Palabra clave o número..." readonly />
+          </div>
+          <div class="ca-phone__filters">
+            <button class="ca-pf ca-pf--active">Todos</button>
+            <button class="ca-pf">Activas</button>
+            <button class="ca-pf">Desierta</button>
+            <button class="ca-pf">Cerrada</button>
+          </div>
+          <div class="ca-phone__count">2.000 resultados para tu búsqueda</div>
+          <div class="ca-phone__card">
+            <div class="ca-pc-status ca-pc-status--orden">Orden de compra emitida</div>
+            <div class="ca-pc-title">Servicio Apoyo Recolección de Residuos Domiciliarios — Comuna de Arauco</div>
+            <div class="ca-pc-org">Instituto Nal. de Desarrollo Sustentable...</div>
+            <div class="ca-pc-meta"><span>Finaliza 15/06/2023</span><span>$7.000.000</span></div>
+            <div class="ca-pc-cta">Revisar detalle →</div>
+          </div>
+          <div class="ca-phone__card">
+            <div class="ca-pc-status ca-pc-status--recibiendo">Publicada recibiendo cotizaciones</div>
+            <div class="ca-pc-title">Servicio Apoyo Recolección de Residuos Domiciliarios — Comuna de Arauco</div>
+            <div class="ca-pc-org">Instituto Nal. de Desarrollo Sustentable...</div>
+            <div class="ca-pc-meta"><span>Finaliza 15/06/2023</span><span>$7.000.000</span></div>
+            <div class="ca-pc-cta">Revisar detalle →</div>
+          </div>
+          <div class="ca-phone__card">
+            <div class="ca-pc-status ca-pc-status--desierta">Desierta</div>
+            <div class="ca-pc-title">Servicio Apoyo Recolección de Residuos Domiciliarios — Comuna de Arauco</div>
+            <div class="ca-pc-org">Instituto Nal. de Desarrollo Sustentable...</div>
+            <div class="ca-pc-meta"><span>Finaliza 15/06/2023</span><span>$7.000.000</span></div>
+            <div class="ca-pc-cta">Revisar detalle →</div>
+          </div>
+          <div class="ca-phone__card">
+            <div class="ca-pc-status ca-pc-status--cancelada">Cancelada</div>
+            <div class="ca-pc-title">Servicio Apoyo Recolección de Residuos Domiciliarios — Comuna de Arauco</div>
+            <div class="ca-pc-org">Instituto Nal. de Desarrollo Sustentable...</div>
+            <div class="ca-pc-meta"><span>Finaliza 15/06/2023</span><span>$7.000.000</span></div>
+            <div class="ca-pc-cta">Revisar detalle →</div>
+          </div>
+          <div class="ca-phone__pagination">
+            <span class="ca-ppag">‹</span>
+            <span class="ca-ppag ca-ppag--active">1</span>
+            <span class="ca-ppag">2</span>
+            <span class="ca-ppag">3</span>
+            <span class="ca-ppag">›</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ca-section">
+  <div class="ca-section__label">Componentes</div>
+  <h2 class="ca-section__title">Las piezas del sistema</h2>
+  <div class="ca-comp-block">
+    <div class="ca-comp-block__label">Pills de estado — sistema de color semántico</div>
+    <div class="ca-pills">
+      <span class="ca-state__pill ca-pill--orden">Orden emitida</span>
+      <span class="ca-state__pill ca-pill--recibiendo">Recibiendo cotizaciones</span>
+      <span class="ca-state__pill ca-pill--segundo">Segundo llamado</span>
+      <span class="ca-state__pill ca-pill--desierta">Desierta</span>
+      <span class="ca-state__pill ca-pill--cancelada">Cancelada</span>
+      <span class="ca-state__pill ca-pill--cerrada">Cerrada</span>
+    </div>
+  </div>
+  <figure class="ca-fig ca-fig--inline">
+    <img src="/assets/compra-agil/componentes.png" alt="Componentes del buscador — filtros, cards de resultado y detalle de orden" />
+    <figcaption>Biblioteca de componentes — filtros, cards y vistas de detalle</figcaption>
+  </figure>
+  <div class="ca-comp-block">
+    <div class="ca-comp-block__label">Panel de filtros</div>
+    <div class="ca-filter-demo">
+      <div class="ca-filter-row">
+        <span class="ca-filter-label">Estado</span>
+        <span class="ca-filter-tag">Recibiendo cotizaciones</span>
+      </div>
+      <div class="ca-filter-row">
+        <span class="ca-filter-label">Región</span>
+        <span class="ca-filter-val">Metropolitana de Santiago</span>
+      </div>
+      <div class="ca-filter-row">
+        <span class="ca-filter-label">Presupuesto</span>
+        <span class="ca-filter-val">$100.000 — $1.500.000</span>
+      </div>
+      <div class="ca-filter-row">
+        <span class="ca-filter-label">Rubro</span>
+        <span class="ca-filter-val">Servicios de aseo y mantención</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ca-section">
+  <div class="ca-section__label">Resultado</div>
+  <h2 class="ca-section__title">Lo que cambió</h2>
+  <div class="ca-outcomes">
+    <div class="ca-outcome">
+      <span class="ca-outcome__num">1 paso</span>
+      <p>para publicar una compra ágil. El proceso anterior requería múltiples formularios y aprobaciones intermedias.</p>
+    </div>
+    <div class="ca-outcome">
+      <span class="ca-outcome__num">6 estados</span>
+      <p>con semántica clara y acciones definidas para cada perfil de usuario.</p>
+    </div>
+    <div class="ca-outcome">
+      <span class="ca-outcome__num">2 journeys</span>
+      <p>diseñados en paralelo — comprador y proveedor — con una arquitectura común.</p>
+    </div>
+    <div class="ca-outcome">
+      <span class="ca-outcome__num">100%</span>
+      <p>de la nueva ley operativa desde el día de su entrada en vigencia.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ca-section ca-section--closing">
+  <h2 class="ca-section__title">Lo que me llevé</h2>
+  <div class="ca-prose ca-prose--lg">
+    <p>Diseñar un producto desde cero a partir de un cambio normativo es un ejercicio de traducción: convertir lenguaje legal en flujos que personas reales puedan operar sin fricción. La ley define el qué. El diseño define el cómo.</p>
+    <p>La decisión más importante del proyecto no fue visual — fue definir el sistema de estados antes de diseñar cualquier pantalla. Sin esa taxonomía clara, todo lo demás habría sido decoración. Un estado bien definido es una decisión de producto: dice qué puede hacer el usuario y qué no, en qué momento y por qué razón.</p>
+    <p>Eso es lo que separa un producto que opera una ley de uno que solo la cumple en papel.</p>
+  </div>
+</section>
