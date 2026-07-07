@@ -1,76 +1,61 @@
 ---
-title: Compra Ágil — Mercado Público
+title: "Simplifying Public Procurement<br>by Design"
 publishDate: 2023-06-01 00:00:00
-img: /assets/compra-agil/hero.png
-img_alt: Compra Ágil search interface on Mercado Público
 description: |
-  Design of the product that operated the new public procurement law for transactions under 100 UTM, from strategy to interface components.
+  Design of the product that operated the new public procurement law — initially for purchases up to 30 UTM, later extended to 100 UTM — from strategy to interface components.
 tags:
   - New product
   - UX Lead
   - Strategy
+specs:
+  - label: Role
+    value: UX Lead · Strategy · Design
+  - label: Client
+    value: ChileCompra / Mercado Público
+  - label: Users
+    value: Government buyers + Suppliers
 ---
 
 import CaseStudyStyles from '../../components/CaseStudyStyles.astro';
 
 <CaseStudyStyles />
 
-<section class="cs-hero">
-  <div class="cs-hero__meta">
-    <span class="cs-tag">New product</span>
-    <span class="cs-tag">UX Lead</span>
-    <span class="cs-tag">Strategy</span>
-    <span class="cs-tag">2023</span>
-  </div>
-  <h1 class="cs-hero__title">
-    Compra Ágil<br />
-    <em>Mercado Público</em>
-  </h1>
-  <p class="cs-hero__subtitle">
-    The Chilean government makes thousands of small purchases every day.
-    Before, each one went through the same bureaucratic process as a million-peso tender.
-    I designed the product that changed that.
-  </p>
-  <div class="cs-hero__specs">
-    <div class="cs-spec">
-      <span class="cs-spec__label">Role</span>
-      <span class="cs-spec__value">UX Lead · Strategy · Design</span>
-    </div>
-    <div class="cs-spec">
-      <span class="cs-spec__label">Client</span>
-      <span class="cs-spec__value">ChileCompra / Mercado Público</span>
-    </div>
-    <div class="cs-spec">
-      <span class="cs-spec__label">Users</span>
-      <span class="cs-spec__value">Government buyers + Suppliers</span>
-    </div>
-    <div class="cs-spec">
-      <span class="cs-spec__label">Year</span>
-      <span class="cs-spec__value">2023</span>
-    </div>
-  </div>
-</section>
-
-<figure class="cs-figure cs-figure--full">
-  <img src="/assets/compra-agil/hero.png" alt="Compra Ágil search interface on Mercado Público" loading="eager" />
-</figure>
-
 <section class="cs-section">
-  <div class="cs-section__label">The challenge</div>
+  <div class="cs-section__label">Context</div>
   <h2 class="cs-section__title">A new law, no product to run it</h2>
   <div class="cs-prose">
-    <p>The new public procurement law established a special modality for acquisitions under 100 UTM: Compra Ágil. The promise was simple, more speed, less bureaucracy. The problem was that no digital tool existed to operate it. Someone had to design it from scratch.</p>
-    <p>I led the design of that product: from strategic definition to interface components, including the flow architecture for both sides of the market, government agencies that buy and suppliers that quote.</p>
+    <p>The new public procurement law established Compra Ágil: a special modality initially for acquisitions up to 30 UTM, later extended to 100 UTM. The promise was simple — more speed, less bureaucracy. The stakes were high: 80% of all State purchases fall within this range, and no digital tool existed to operate the new modality. Someone had to design it from scratch.</p>
+    <p>I led the design of that product: from strategic definition to interface components, including the flow architecture for both sides of the market — government agencies that buy and suppliers that quote.</p>
   </div>
   <div class="cs-highlight-block">
     <p class="cs-highlight-block__question">The goal was not to digitize the existing process. It was to replace it.</p>
-    <p class="cs-highlight-block__desc">If we create a dedicated flow for purchases under 100 UTM, with one-step publishing, clear statuses and visibility for both sides of the market, then we will reduce cycle time and increase supplier participation.</p>
+    <p class="cs-highlight-block__desc">Eliminate the technical requirements document. Remove intermediate administrative acts. Simplify the quotation process to a single step. If the flow is clear for both buyers and suppliers, cycle time drops and market participation grows.</p>
   </div>
 </section>
 
 <section class="cs-section">
-  <div class="cs-section__label">The problem</div>
-  <h2 class="cs-section__title">What made every government purchase slow</h2>
+  <div class="cs-section__label">Process</div>
+  <h2 class="cs-section__title">A structured approach to an undefined problem</h2>
+  <div class="cs-prose">
+    <p>Designing a product from scratch — with no precedent and a hard launch deadline tied to a new law — required a clear methodology. We followed a Double Diamond process: understand deeply before defining, define before prototyping, and build in a feedback loop from day one.</p>
+  </div>
+  <figure class="cs-figure cs-figure--clean">
+    <img class="img-clean" src="/assets/method.png" alt="Double Diamond process: Discovery, Define, Develop, Delivery, Monitoring with Continuous Improvement" />
+  </figure>
+  <div class="cs-prose">
+    <p>The product serves two very different users simultaneously. Every design decision had to work for both sides of the market without creating asymmetry or confusion.</p>
+  </div>
+  <figure class="cs-figure cs-figure--clean">
+    <img class="img-clean" src="/assets/compra-agil-flujo.png" alt="Compra Ágil flow: buyer and supplier parallel journeys across 8 steps" />
+  </figure>
+</section>
+
+<section class="cs-section">
+  <div class="cs-section__label">Research</div>
+  <h2 class="cs-section__title">Listening to both sides before designing anything</h2>
+  <div class="cs-prose">
+    <p>We ran more than 30 in-depth interviews with public agencies and suppliers — hospitals, regional institutions, municipalities, and small businesses — using qualitative exploratory methods to understand their real experience with public procurement before touching any interface.</p>
+  </div>
   <div class="cs-findings">
     <blockquote class="cs-finding">
       <p>"We have to run a full tender to buy printer paper. The process is the same as for an infrastructure project."</p>
@@ -88,48 +73,48 @@ import CaseStudyStyles from '../../components/CaseStudyStyles.astro';
 </section>
 
 <section class="cs-section">
-  <div class="cs-section__label">Process</div>
-  <h2 class="cs-section__title">Designing both sides of the market at the same time</h2>
+  <div class="cs-section__label">Ideation</div>
+  <h2 class="cs-section__title">Mapping what didn't exist yet</h2>
   <div class="cs-prose">
-    <p>The project started with regulatory research, understanding exactly what the law allows and what remained as a design decision. From there, the process was iterative: define, prototype, validate and adjust before scaling.</p>
+    <p>With the research findings clear, the work shifted to defining the product's architecture before any screens. Each step had to be validated before moving forward.</p>
   </div>
   <div class="cs-timeline">
     <div class="cs-timeline__item">
       <div class="cs-timeline__marker"></div>
       <div class="cs-timeline__content">
-        <h4>Regulatory context research</h4>
-        <p>Reading and synthesis of the new law. Interviews with the legal team and procurement units to understand the real scope, what the law allows and what remains as a design decision.</p>
+        <h4>Regulatory scope definition</h4>
+        <p>Reading and synthesis of the new law. Interviews with the legal team and procurement units to understand exactly what the law mandates and what remained as a design decision.</p>
       </div>
     </div>
     <div class="cs-timeline__item">
       <div class="cs-timeline__marker"></div>
       <div class="cs-timeline__content">
         <h4>Flow mapping for two profiles</h4>
-        <p>The product has two sides: buyers who publish and suppliers who quote. I mapped both journeys separately before looking for convergence points.</p>
+        <p>The product has two sides: buyers who publish and suppliers who quote. I mapped both journeys separately before looking for convergence and divergence points.</p>
       </div>
     </div>
     <div class="cs-timeline__item">
       <div class="cs-timeline__marker"></div>
       <div class="cs-timeline__content">
-        <h4>Status system definition</h4>
-        <p>I designed the complete taxonomy of order statuses before touching any screen. Without that clear structure, the system has no criterion, only appearance.</p>
+        <h4>Status system architecture</h4>
+        <p>Before any screen, I designed the complete taxonomy of order statuses. Without that structure, the system has no criterion — only appearance.</p>
       </div>
     </div>
     <div class="cs-timeline__item">
       <div class="cs-timeline__marker"></div>
       <div class="cs-timeline__content">
         <h4>Prototyping, validation and handoff</h4>
-        <p>Iterative prototypes of the search interface, publishing form and order detail. Validation with real buyers from public agencies and documentation for development.</p>
+        <p>Iterative prototypes of the search interface, publishing form and order detail. Validation with real buyers from public agencies, then documentation for development.</p>
       </div>
     </div>
   </div>
 </section>
 
 <section class="cs-section">
-  <div class="cs-section__label">Design</div>
+  <div class="cs-section__label">Solution Design</div>
   <h2 class="cs-section__title">A status system before any screen</h2>
   <div class="cs-prose">
-    <p>Each status has its own meaning, semantic color and set of allowed actions. They are readable for both the buyer and the supplier equally, they are not just labels, they are behavioral contracts.</p>
+    <p>Each status has its own meaning, semantic color and set of allowed actions. They are readable for both the buyer and the supplier equally — not just labels, but behavioral contracts that define what each user can do at every moment.</p>
   </div>
   <div class="ca-states">
     <div class="ca-state">
@@ -163,28 +148,38 @@ import CaseStudyStyles from '../../components/CaseStudyStyles.astro';
 </section>
 
 <section class="cs-section">
-  <div class="cs-section__label">Results</div>
+  <div class="cs-section__label">Impact</div>
   <h2 class="cs-section__title">The product went live the same day as the law</h2>
   <div class="cs-outcomes">
     <div class="cs-outcome">
-      <span class="cs-outcome__icon">⚡️</span>
-      <h4>1 step to publish</h4>
-      <p>The previous process required multiple forms and intermediate approvals for a simple purchase.</p>
+      <span class="cs-outcome__num">567,981</span>
+      <span class="cs-outcome__label">Purchase orders issued</span>
+      <p class="cs-outcome__desc">In less than two years of operation.</p>
     </div>
     <div class="cs-outcome">
-      <span class="cs-outcome__icon">🔖</span>
-      <h4>6 statuses with clear semantics</h4>
-      <p>Actions defined for each profile at every moment of the purchase cycle.</p>
+      <span class="cs-outcome__num">US$439M</span>
+      <span class="cs-outcome__label">Total transacted</span>
+      <p class="cs-outcome__desc">Total volume processed through Compra Ágil since launch.</p>
     </div>
     <div class="cs-outcome">
-      <span class="cs-outcome__icon">🔁</span>
-      <h4>2 journeys in parallel</h4>
-      <p>Buyer and supplier designed with a shared architecture but differentiated experiences.</p>
+      <span class="cs-outcome__num">80%</span>
+      <span class="cs-outcome__label">Awarded to SMEs</span>
+      <p class="cs-outcome__desc">Of total amounts adjudicated went to micro, small and medium businesses.</p>
     </div>
     <div class="cs-outcome">
-      <span class="cs-outcome__icon">✅</span>
-      <h4>100% of the law operative</h4>
-      <p>The product went live on the day the new law came into effect.</p>
+      <span class="cs-outcome__num">4.5×</span>
+      <span class="cs-outcome__label">Avg quotes per purchase</span>
+      <p class="cs-outcome__desc">High competition rate — a transparent, open market in practice.</p>
+    </div>
+    <div class="cs-outcome">
+      <span class="cs-outcome__num">1</span>
+      <span class="cs-outcome__label">Step to publish</span>
+      <p class="cs-outcome__desc">Eliminated the technical requirements document and all intermediate administrative acts.</p>
+    </div>
+    <div class="cs-outcome">
+      <span class="cs-outcome__num">Day 1</span>
+      <span class="cs-outcome__label">Live on launch of the law</span>
+      <p class="cs-outcome__desc">The product launched the same day the new regulation came into effect.</p>
     </div>
   </div>
 </section>

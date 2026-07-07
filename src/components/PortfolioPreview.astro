@@ -17,7 +17,7 @@ const year = new Date(data.publishDate).getFullYear();
 
 <a class="project-row" href={`/work/${id}`}>
 	<div class="project-info">
-		<h3 class="title">{data.title}</h3>
+		<h3 class="title">{data.title.replace(/<br\s*\/?>/gi, ' ')}</h3>
 		<hr class="divider" />
 		<div class="meta">
 			{data.tags && <span class="tags">{data.tags[0].toUpperCase()}</span>}
@@ -39,6 +39,7 @@ const year = new Date(data.publishDate).getFullYear();
 		padding-block: 3rem;
 		border-top: 1px solid #e0e0e0;
 		transition: opacity 0.2s ease;
+		zoom: 0.9;
 	}
 
 	.project-row:hover .title,
