@@ -1,54 +1,27 @@
 ---
 title: Design System Mercado Público
 publishDate: 2023-05-01 00:00:00
-img: /assets/design-system/indice.png
+img: /assets/design-system/DS.png
 img_alt: Design System for Mercado Público, component architecture, tokens and content guidelines
 description: |
-  I led the content architecture and voice of the Mercado Público Design System, building the guidelines that define how the platform speaks to the people who use it.
+  Led the content architecture and voice layer of the Mercado Público Design System — establishing the writing principles, token structure, and component guidelines used by 5 product teams across a platform that processes billions in government procurement.
 tags:
   - Design System
   - UX Writing
   - Content
+specs:
+  - label: Role
+    value: Design System Lead · Content Architecture
+  - label: Client
+    value: ChileCompra / Mercado Público
+  - label: Teams
+    value: 5 product teams · Design · Engineering
 ---
 
 import CaseStudyStyles from '../../components/CaseStudyStyles.astro';
 
 <CaseStudyStyles />
 
-<section class="cs-hero">
-  <div class="cs-hero__meta">
-    <span class="cs-tag">Design System</span>
-    <span class="cs-tag">UX Writing</span>
-    <span class="cs-tag">Content</span>
-  </div>
-  <h1 class="cs-hero__title">
-    Design System<br />
-    <em>Mercado Público</em>
-  </h1>
-  <p class="cs-hero__subtitle">
-    Building a design system is not just about organizing components. It is about deciding who speaks,
-    how it sounds, and what it says when someone needs to understand something urgent on
-    a platform that moves billions in government procurement.
-  </p>
-  <div class="cs-hero__specs">
-    <div class="cs-spec">
-      <span class="cs-spec__label">Role</span>
-      <span class="cs-spec__value">Design System Lead</span>
-    </div>
-    <div class="cs-spec">
-      <span class="cs-spec__label">Client</span>
-      <span class="cs-spec__value">ChileCompra / Mercado Público</span>
-    </div>
-    <div class="cs-spec">
-      <span class="cs-spec__label">Tools</span>
-      <span class="cs-spec__value">Figma · Tokens Studio · Notion</span>
-    </div>
-    <div class="cs-spec">
-      <span class="cs-spec__label">Deliverables</span>
-      <span class="cs-spec__value">Component library · Design tokens · Voice and tone guidelines · Content guide</span>
-    </div>
-  </div>
-</section>
 
 <figure class="cs-figure cs-figure--full">
   <img src="/assets/design-system/indice.png" alt="Overview of the Mercado Público Design System in Figma" loading="eager" />
@@ -56,11 +29,11 @@ import CaseStudyStyles from '../../components/CaseStudyStyles.astro';
 
 <section class="cs-section">
   <div class="cs-section__label">Context</div>
-  <h2 class="cs-section__title">A critical platform with a broken voice</h2>
+  <h2 class="cs-section__title">A critical platform with no shared voice</h2>
   <div class="cs-prose">
-    <p>Mercado Público is where the Chilean government buys. Hospitals, municipalities, ministries, all of them go through it to acquire everything from medical supplies to technology services. It is a platform that cannot afford to be confusing.</p>
-    <p>When I came in to lead the Design System, the first thing I found was not a component problem. It was a voice problem. Every team wrote in their own way. Some flows sounded like legal rulings. Others sounded like corporate emails from the 90s. Very few sounded like a conversation between real people.</p>
-    <p>The existing system had components, yes. But it had no shared criterion for what to say in each one of them. That gap is noticeable: in buttons that create doubt, in error messages that point without guiding, in labels only understood by people who have been on the team for years.</p>
+    <p>Mercado Público is Chile's government procurement platform — hospitals, municipalities, and ministries use it daily to acquire everything from medical supplies to infrastructure services. With over one million active users and billions in annual transactions, inconsistency has a direct cost.</p>
+    <p>When I joined to lead the Design System, the core problem was not the absence of components. It was the absence of design authority. Five product teams were building independently, each applying their own content conventions. Some flows read like legal filings. Others read like internal IT memos. None of them sounded like a platform built for people.</p>
+    <p>The system had visual foundations. What it lacked was a shared criterion: a principled approach to deciding what to say, how to say it, and why it matters. That gap was visible in every screen — buttons that introduced doubt instead of resolving it, error messages that reported failures without offering paths forward, labels that were only legible to people who had been on the team for years.</p>
   </div>
 </section>
 
@@ -103,16 +76,16 @@ import CaseStudyStyles from '../../components/CaseStudyStyles.astro';
 
 <section class="cs-section">
   <div class="cs-section__label">Definition</div>
-  <h2 class="cs-section__title">The question that organized everything</h2>
+  <h2 class="cs-section__title">Establishing a shared editorial standard</h2>
   <div class="cs-prose">
-    <p>I needed a simple filter, applicable by anyone on the team, that would allow evaluating any piece of content without needing to be a professional writer.</p>
+    <p>Before defining principles, I needed a practical filter — a single question that any team member could apply to any piece of content, without specialized training in UX writing.</p>
   </div>
   <div class="cs-highlight-block">
-    <p class="cs-highlight-block__question">Do real people speak this way?</p>
-    <p class="cs-highlight-block__desc">If the answer was no, it needed to be rewritten. This question became the north star of the entire project.</p>
+    <p class="cs-highlight-block__question">Would a real person say this?</p>
+    <p class="cs-highlight-block__desc">If the answer was no, it needed to be rewritten. Simple enough to use in any review, precise enough to drive real decisions. This became the editorial north star of the system.</p>
   </div>
   <div class="cs-prose cs-prose--mt">
-    <p>From there, I worked alongside ChileCompra's Communications Department to define the principles that would guide all content in the system. Not as a list of rules, but as a way of thinking before writing.</p>
+    <p>From there, I worked in close alignment with ChileCompra's Communications team to formalize the content principles. The goal was not a style guide that lives in a document nobody reads. It was a set of criteria embedded directly into the design workflow — applicable at the component level, the pattern level, and the product level simultaneously.</p>
   </div>
   <div class="cs-principles">
     <div class="cs-principle">
@@ -381,22 +354,28 @@ import CaseStudyStyles from '../../components/CaseStudyStyles.astro';
     <p>The content guidelines were integrated into the Design System with the same weight as typography, colors or components. Not as an appendix. As a living part of the system, accessible in the same tool where teams design.</p>
     <p>That changed something concrete: teams stopped making content decisions intuitively and started having shared criteria. Reviews happened earlier in the process. The platform started to sound more consistent, more coherent, more human.</p>
   </div>
-  <div class="cs-outcomes">
-    <div class="cs-outcome">
-      <h4>A single source of truth</h4>
-      <p>Five products, one system. Teams know exactly where to find the right component and how to write in it.</p>
-    </div>
-    <div class="cs-outcome">
-      <h4>Content as a design criterion</h4>
-      <p>Content decisions are made in the same space where design happens, not after or apart.</p>
-    </div>
-    <div class="cs-outcome">
-      <h4>Faster iteration</h4>
-      <p>With well-defined tokens, propagating visual changes stopped being a weeks-long task.</p>
-    </div>
-    <div class="cs-outcome">
-      <h4>Documented accessibility</h4>
-      <p>Every component with its WCAG criteria verified before launch, not as a final review.</p>
+  <div class="cs-outcomes-expand">
+    <div class="cs-outcomes">
+      <div class="cs-outcome">
+        <span class="cs-outcome__icon">🗂</span>
+        <h4>A single source of truth</h4>
+        <p>Five products, one system. Teams know exactly where to find the right component and how to write in it.</p>
+      </div>
+      <div class="cs-outcome">
+        <span class="cs-outcome__icon">✍️</span>
+        <h4>Content as a design criterion</h4>
+        <p>Content decisions are made in the same space where design happens, not after or apart.</p>
+      </div>
+      <div class="cs-outcome">
+        <span class="cs-outcome__icon">⚡️</span>
+        <h4>Faster iteration</h4>
+        <p>With well-defined tokens, propagating visual changes stopped being a weeks-long task.</p>
+      </div>
+      <div class="cs-outcome">
+        <span class="cs-outcome__icon">♿</span>
+        <h4>Documented accessibility</h4>
+        <p>Every component with its WCAG criteria verified before launch, not as a final review.</p>
+      </div>
     </div>
   </div>
 </section>
