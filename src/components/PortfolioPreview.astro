@@ -23,6 +23,11 @@ const year = new Date(data.publishDate).getFullYear();
 			{data.tags && <span class="tags">{data.tags[0].toUpperCase()}</span>}
 			<span class="year">{year}</span>
 		</div>
+		{data.highlights && (
+			<ul class="highlights">
+				{data.highlights.map((h) => <li>{h}</li>)}
+			</ul>
+		)}
 	</div>
 	<div class="project-image">
 		<img src={data.img} alt={data.img_alt || ''} loading="lazy" decoding="async" />
@@ -85,7 +90,7 @@ const year = new Date(data.publishDate).getFullYear();
 		font-size: var(--text-sm);
 		font-weight: 700;
 		letter-spacing: 0.08em;
-		color: #333;
+		color: #7611a6;
 		transition: color 0.2s ease;
 	}
 
@@ -95,10 +100,34 @@ const year = new Date(data.publishDate).getFullYear();
 		transition: color 0.2s ease;
 	}
 
+	.highlights {
+		list-style: none;
+		padding: 0;
+		margin: 0.5rem 0 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem;
+	}
+
+	.highlights li {
+		font-size: 1.1rem;
+		color: #555;
+		line-height: 1.5;
+		padding-left: 1.8rem;
+		position: relative;
+	}
+
+	.highlights li::before {
+		content: '→';
+		position: absolute;
+		left: 0;
+		color: #7611a6;
+	}
+
 	.project-image {
 		border-radius: 1rem;
 		overflow: hidden;
-		height: 360px;
+		height: 432px;
 		will-change: transform;
 	}
 

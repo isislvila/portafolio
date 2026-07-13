@@ -14,6 +14,7 @@ export const collections = {
 			img: z.string().optional(),
 			img_alt: z.string().optional(),
 			specs: z.array(z.object({ label: z.string(), value: z.string() })).optional(),
+			highlights: z.array(z.string()).optional(),
 		}),
 	}),
 };
